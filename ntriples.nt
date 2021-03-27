@@ -1,0 +1,18 @@
+<http://example.org/ns/tt0298130> <http://example.org/props/title> "The_Ring"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/ns/tt0298130> <http://example.org/props/country> <http://example.org/ns/USA> .
+<http://example.org/ns/tt0298130> <http://example.org/props/budget> "$ 48000000 "^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/ns/tt0298130> <http://example.org/props/director> <http://example.org/ns/Gore_Verbinski> .
+<http://example.org/ns/tt0298130> <http://example.org/props/actor> <http://example.org/ns/Naomi_Watts> .
+<http://example.org/ns/tt0298130> <http://example.org/props/actor> <http://example.org/ns/Brian_Cox> .
+<http://example.org/ns/tt0120663> <http://example.org/props/title> "Eyes_Wide_Shut"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/ns/tt0120663> <http://example.org/props/country> <http://example.org/ns/USA> .
+<http://example.org/ns/tt0120663> <http://example.org/props/budget> "$ 65000000 "^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/ns/tt0120663> <http://example.org/props/actor> <http://example.org/ns/Cate_Blanchett> .
+<http://example.org/ns/tt0120663> <http://example.org/props/actor> <http://example.org/ns/Nicole_Kidman> .
+<http://example.org/ns/tt0120663> <http://example.org/props/director> <http://example.org/ns/Stanley_Kubrick> .
+<http://example.org/ns/tt0421715> <http://example.org/props/title> "The_Curious_Case_of_Benjamin_Button"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/ns/tt0421715> <http://example.org/props/country> <http://example.org/ns/USA> .
+<http://example.org/ns/tt0421715> <http://example.org/props/budget> "$ 150000000 "^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/ns/tt0421715> <http://example.org/props/actor> <http://example.org/ns/Cate_Blanchett> .
+<http://example.org/ns/tt0421715> <http://example.org/props/actor> <http://example.org/ns/Brad_Pitt> .
+<http://example.org/ns/tt0421715> <http://example.org/props/director> <http://example.org/ns/David_Fincher> .
