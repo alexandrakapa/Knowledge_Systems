@@ -20271,7 +20271,6 @@
 <http://example.org/ns/tt0103074> <http://example.org/props/hasDatePublished> <http://example.org/ns/1991-09-13> .
 <http://example.org/ns/tt0094407> <http://example.org/props/hasActor> <http://example.org/ns/Klaus_Schultz> .
 <http://example.org/ns/tt0103190> <http://example.org/props/hasAverageVote> <http://example.org/ns/7.2> .
-</home/alexandra/Knowledge_Systems/2nd_part_of_project/finalKnowledge2.nt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://example.org/ns/Writer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://example.org/ns/Writer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://example.org/ns/Movie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
