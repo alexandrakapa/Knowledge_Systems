@@ -3,12 +3,12 @@
          xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xml:base="/home/alexandra/Knowledge_Systems/2nd_part_of_project/KR-Ex2_1.nt"
-         xmlns="/home/alexandra/Knowledge_Systems/2nd_part_of_project/KR-Ex2_1.nt#"
+         xml:base="/home/alexandra/Knowledge_Systems/2nd_part_of_project/home/alexandra/Knowledge_Systems/2nd_part_of_project/KR-Ex2_1.nt"
+         xmlns="/home/alexandra/Knowledge_Systems/2nd_part_of_project/home/alexandra/Knowledge_Systems/2nd_part_of_project/KR-Ex2_1.nt#"
          xmlns:ns="http://example.org/ns/"
          xmlns:prop="http://example.org/props/">
 
-<owl:Ontology rdf:about="/home/alexandra/Knowledge_Systems/2nd_part_of_project/KR-Ex2_1.nt"/>
+<owl:Ontology rdf:about="/home/alexandra/Knowledge_Systems/2nd_part_of_project/home/alexandra/Knowledge_Systems/2nd_part_of_project/KR-Ex2_1.nt"/>
 
 <owl:ObjectProperty rdf:about="http://example.org/props/hasActor"/>
 
