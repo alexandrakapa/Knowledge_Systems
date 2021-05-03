@@ -9,6 +9,56 @@
 
 <owl:Ontology rdf:about="/home/alexandra/Knowledge_Systems/2nd_part_of_project/finalKnowledgeNew.nt"/>
 
+<owl:ObjectProperty rdf:about="http://example.org/props/hasActor"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasLanguage"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasGenre"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasDirector"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasCountry"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasReceivedAward"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasProductionCompany"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasWriter"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasMainSubject"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasColor"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasYearPublished"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasDescription"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasDuration"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasOriginalTitle"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasReviewsFromCritics"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasAverageVote"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasTitle"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasReviewsFromUsers"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasUSAGrossIncome"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasDatePublished"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasBudget"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasVotes"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/isPartOfTheSeries"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasMetascore"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasWorldwideGrossIncome"/>
+
 <owl:Class rdf:about="http://example.org/ns/Writer">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
