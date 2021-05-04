@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt"
+         xmlns="/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#">
+
+<owl:Ontology rdf:about="/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasActor"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasLanguage"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasDirector"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasCountry"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasReceivedAward"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasProductionCompany"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasWriter"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasMainSubject"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasColor"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasYearPublished"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasDescription"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasDuration"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasOriginalTitle"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasReviewsFromCritics"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasAverageVote"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasTitle"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasReviewsFromUsers"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasUSAGrossIncome"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasDatePublished"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasBudget"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasVotes"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/isPartOfTheSeries"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasMetascore"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasWorldwideGrossIncome"/>
+
+<owl:Class rdf:about="http://example.org/ns/Writer">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/Movie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/Genre">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/Country">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/Actor">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/Director">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/ProductionCompany">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/Language">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/Color">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/Award">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/MainSubject">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/ComedyMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/DramaMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/CrimeMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/ActionMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/HorrorMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/RomanceMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/AdventureMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/MysteryMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/ScFiMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/HistoryMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/FantasyMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/ThrillerMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/MusicalMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/MusicMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/AnimationMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/SportMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/FamilyMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/BiographyMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/WarMovie">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+
+</rdf:RDF>
