@@ -1,0 +1,1267 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#"
+     xml:base="/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://example.org"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org#hasContinent -->
+
+    <owl:ObjectProperty rdf:about="http://example.org#hasContinent">
+        <rdfs:subPropertyOf rdf:resource="http://example.org#hasTerritory"/>
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://example.org#Continent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org#hasContributor -->
+
+    <owl:ObjectProperty rdf:about="http://example.org#hasContributor">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://example.org#Contributor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org#hasEditor -->
+
+    <owl:ObjectProperty rdf:about="http://example.org#hasEditor">
+        <rdfs:subPropertyOf rdf:resource="http://example.org#hasContributor"/>
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://example.org#Editor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org#hasMusicalArtist -->
+
+    <owl:ObjectProperty rdf:about="http://example.org#hasMusicalArtist">
+        <rdfs:subPropertyOf rdf:resource="http://example.org#hasContributor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org#hasPresentation -->
+
+    <owl:ObjectProperty rdf:about="http://example.org#hasPresentation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org#hasScreenWriter -->
+
+    <owl:ObjectProperty rdf:about="http://example.org#hasScreenWriter">
+        <rdfs:subPropertyOf rdf:resource="http://example.org#hasContributor"/>
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://example.org#ScreenWriter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org#hasTerritory -->
+
+    <owl:ObjectProperty rdf:about="http://example.org#hasTerritory">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://example.org#Territory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org#isDirectorOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org#isDirectorOf">
+        <owl:inverseOf rdf:resource="http://example.org/props/hasDirector"/>
+        <rdfs:domain rdf:resource="http://example.org/ns/Director"/>
+        <rdfs:range rdf:resource="http://example.org/ns/Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/props/hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/props/hasActor">
+        <rdfs:subPropertyOf rdf:resource="http://example.org#hasContributor"/>
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://example.org/ns/Actor"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasColor"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasCountry"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasLanguage"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasMainSubject"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasProductionCompany"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasReceivedAward"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/props/hasColor -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/props/hasColor">
+        <rdfs:subPropertyOf rdf:resource="http://example.org#hasPresentation"/>
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://example.org/ns/Color"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasCountry"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasDirector"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasLanguage"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasMainSubject"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasProductionCompany"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasReceivedAward"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasWriter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/props/hasCountry -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/props/hasCountry">
+        <rdfs:subPropertyOf rdf:resource="http://example.org#hasTerritory"/>
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://example.org/ns/Country"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasDirector"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasLanguage"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasMainSubject"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasProductionCompany"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasReceivedAward"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasWriter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/props/hasDirector -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/props/hasDirector">
+        <rdfs:subPropertyOf rdf:resource="http://example.org#hasContributor"/>
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://example.org/ns/Director"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasLanguage"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasMainSubject"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasProductionCompany"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasReceivedAward"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/props/hasLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/props/hasLanguage">
+        <rdfs:subPropertyOf rdf:resource="http://example.org#hasPresentation"/>
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://example.org/ns/Language"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasMainSubject"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasProductionCompany"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasReceivedAward"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasWriter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/props/hasMainSubject -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/props/hasMainSubject">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://example.org/ns/MainSubject"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasProductionCompany"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasReceivedAward"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasWriter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/props/hasProductionCompany -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/props/hasProductionCompany">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://example.org/ns/ProductionCompany"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasReceivedAward"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasWriter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/props/hasReceivedAward -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/props/hasReceivedAward">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://example.org/ns/Award"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasWriter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/props/hasWriter -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/props/hasWriter">
+        <rdfs:subPropertyOf rdf:resource="http://example.org#hasContributor"/>
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://example.org/ns/Writer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/props/hasAverageVote -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/props/hasAverageVote">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasBudget"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasDatePublished"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasDescription"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasDuration"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasOriginalTitle"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasTitle"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasUSAGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasVotes"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasWorldwideGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasYearPublished"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/isPartOfTheSeries"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/props/hasBudget -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/props/hasBudget">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasDatePublished"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasDescription"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasDuration"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasMetascore"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasOriginalTitle"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasReviewsFromCritics"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasReviewsFromUsers"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasTitle"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasVotes"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasYearPublished"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/isPartOfTheSeries"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/props/hasDatePublished -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/props/hasDatePublished">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasDescription"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasDuration"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasMetascore"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasOriginalTitle"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasReviewsFromCritics"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasReviewsFromUsers"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasTitle"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasUSAGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasVotes"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasWorldwideGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasYearPublished"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/isPartOfTheSeries"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/props/hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/props/hasDescription">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasDuration"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasMetascore"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasOriginalTitle"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasReviewsFromCritics"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasReviewsFromUsers"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasTitle"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasUSAGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasVotes"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasWorldwideGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasYearPublished"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/isPartOfTheSeries"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/props/hasDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/props/hasDuration">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasMetascore"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasOriginalTitle"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasReviewsFromCritics"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasReviewsFromUsers"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasTitle"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasUSAGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasWorldwideGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasYearPublished"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/isPartOfTheSeries"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/props/hasMetascore -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/props/hasMetascore">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasOriginalTitle"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasTitle"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasUSAGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasVotes"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasWorldwideGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasYearPublished"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/isPartOfTheSeries"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/props/hasOriginalTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/props/hasOriginalTitle">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasReviewsFromCritics"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasReviewsFromUsers"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasUSAGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasVotes"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasWorldwideGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasYearPublished"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/props/hasReviewsFromCritics -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/props/hasReviewsFromCritics">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasTitle"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasUSAGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasVotes"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasWorldwideGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasYearPublished"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/isPartOfTheSeries"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/props/hasReviewsFromUsers -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/props/hasReviewsFromUsers">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasTitle"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasUSAGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasVotes"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasWorldwideGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasYearPublished"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/isPartOfTheSeries"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/props/hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/props/hasTitle">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasUSAGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasVotes"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasWorldwideGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasYearPublished"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/props/hasUSAGrossIncome -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/props/hasUSAGrossIncome">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasVotes"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasYearPublished"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/isPartOfTheSeries"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/props/hasVotes -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/props/hasVotes">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasWorldwideGrossIncome"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasYearPublished"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/isPartOfTheSeries"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/props/hasWorldwideGrossIncome -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/props/hasWorldwideGrossIncome">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/hasYearPublished"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/isPartOfTheSeries"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/props/hasYearPublished -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/props/hasYearPublished">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <owl:propertyDisjointWith rdf:resource="http://example.org/props/isPartOfTheSeries"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/props/isPartOfTheSeries -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/props/isPartOfTheSeries">
+        <rdfs:domain rdf:resource="http://example.org/ns/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org#Abduction -->
+
+    <owl:Class rdf:about="http://example.org#Abduction">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/MainSubject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#Africa -->
+
+    <owl:Class rdf:about="http://example.org#Africa">
+        <rdfs:subClassOf rdf:resource="http://example.org#Continent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#America -->
+
+    <owl:Class rdf:about="http://example.org#America">
+        <rdfs:subClassOf rdf:resource="http://example.org#Continent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#Asia -->
+
+    <owl:Class rdf:about="http://example.org#Asia">
+        <rdfs:subClassOf rdf:resource="http://example.org#Continent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#BiographyHistoryMovie -->
+
+    <owl:Class rdf:about="http://example.org#BiographyHistoryMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#BlackComedyMovie -->
+
+    <owl:Class rdf:about="http://example.org#BlackComedyMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/ComedyMovie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#ComedyActionMovie -->
+
+    <owl:Class rdf:about="http://example.org#ComedyActionMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#ContemproraryFantasyMovie -->
+
+    <owl:Class rdf:about="http://example.org#ContemproraryFantasyMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/FantasyMovie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#Continent -->
+
+    <owl:Class rdf:about="http://example.org#Continent">
+        <rdfs:subClassOf rdf:resource="http://example.org#Territory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#Contributor -->
+
+    <owl:Class rdf:about="http://example.org#Contributor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#Death -->
+
+    <owl:Class rdf:about="http://example.org#Death">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/MainSubject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#DystopianMovie -->
+
+    <owl:Class rdf:about="http://example.org#DystopianMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org#SciFiMovie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#Editor -->
+
+    <owl:Class rdf:about="http://example.org#Editor">
+        <rdfs:subClassOf rdf:resource="http://example.org#Contributor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#Europe -->
+
+    <owl:Class rdf:about="http://example.org#Europe">
+        <rdfs:subClassOf rdf:resource="http://example.org#Continent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#Friendship -->
+
+    <owl:Class rdf:about="http://example.org#Friendship">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/MainSubject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#HighRated -->
+
+    <owl:Class rdf:about="http://example.org#HighRated">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/props/hasAverageVote"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://example.org#LowRated"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#HistoricalFictionMovie -->
+
+    <owl:Class rdf:about="http://example.org#HistoricalFictionMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/HistoryMovie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#Humanity -->
+
+    <owl:Class rdf:about="http://example.org#Humanity">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/MainSubject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#LongFilm -->
+
+    <owl:Class rdf:about="http://example.org#LongFilm">
+        <owl:equivalentClass rdf:resource="http://example.org/ns/Movie"/>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/props/hasDuration"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">90</owl:minCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#Love -->
+
+    <owl:Class rdf:about="http://example.org#Love">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/MainSubject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#LowRated -->
+
+    <owl:Class rdf:about="http://example.org#LowRated">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/props/hasAverageVote"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#MusicalArtist -->
+
+    <owl:Class rdf:about="http://example.org#MusicalArtist">
+        <rdfs:subClassOf rdf:resource="http://example.org#Contributor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#MysteryRomanceMovie -->
+
+    <owl:Class rdf:about="http://example.org#MysteryRomanceMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#MysteryThrillerMovie -->
+
+    <owl:Class rdf:about="http://example.org#MysteryThrillerMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#Oceania -->
+
+    <owl:Class rdf:about="http://example.org#Oceania">
+        <rdfs:subClassOf rdf:resource="http://example.org#Continent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#ParodyMovie -->
+
+    <owl:Class rdf:about="http://example.org#ParodyMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/ComedyMovie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#Post-apocalypticMovie -->
+
+    <owl:Class rdf:about="http://example.org#Post-apocalypticMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org#SciFiMovie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#Presentation -->
+
+    <owl:Class rdf:about="http://example.org#Presentation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#Religion -->
+
+    <owl:Class rdf:about="http://example.org#Religion">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/MainSubject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#Sacrifice -->
+
+    <owl:Class rdf:about="http://example.org#Sacrifice">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/MainSubject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#SciFiFantasyMovie -->
+
+    <owl:Class rdf:about="http://example.org#SciFiFantasyMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#SciFiMovie -->
+
+    <owl:Class rdf:about="http://example.org#SciFiMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#ScreenWriter -->
+
+    <owl:Class rdf:about="http://example.org#ScreenWriter">
+        <rdfs:subClassOf rdf:resource="http://example.org#Contributor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#ShortFilm -->
+
+    <owl:Class rdf:about="http://example.org#ShortFilm">
+        <owl:equivalentClass rdf:resource="http://example.org/ns/Movie"/>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/props/hasDuration"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">89</owl:maxCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#SportsComedy -->
+
+    <owl:Class rdf:about="http://example.org#SportsComedy">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#TeenDramaMovie -->
+
+    <owl:Class rdf:about="http://example.org#TeenDramaMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/DramaMovie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#Territory -->
+
+    <owl:Class rdf:about="http://example.org#Territory">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#ThrillerCrimeMovie -->
+
+    <owl:Class rdf:about="http://example.org#ThrillerCrimeMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#TragedyMovie -->
+
+    <owl:Class rdf:about="http://example.org#TragedyMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/DramaMovie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#UrbanFantasyMovie -->
+
+    <owl:Class rdf:about="http://example.org#UrbanFantasyMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/FantasyMovie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#WarDramaMovie -->
+
+    <owl:Class rdf:about="http://example.org#WarDramaMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#00sMovie -->
+
+    <owl:Class rdf:about="http://example.org#00sMovie">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/props/hasYearPublished"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org#90sMovies -->
+
+    <owl:Class rdf:about="http://example.org#90sMovies">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/props/hasYearPublished"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</xsd:maxExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/ActionMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/ActionMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/Actor -->
+
+    <owl:Class rdf:about="http://example.org/ns/Actor">
+        <rdfs:subClassOf rdf:resource="http://example.org#Contributor"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Award"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Color"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Country"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Genre"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Language"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/MainSubject"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Movie"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/ProductionCompany"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Writer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/AdventureMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/AdventureMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/AnimationMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/AnimationMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/Award -->
+
+    <owl:Class rdf:about="http://example.org/ns/Award">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Color"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Country"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Director"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Genre"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Language"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/MainSubject"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Movie"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/ProductionCompany"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Writer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/BiographyMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/BiographyMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/Color -->
+
+    <owl:Class rdf:about="http://example.org/ns/Color">
+        <rdfs:subClassOf rdf:resource="http://example.org#Presentation"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Country"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Director"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Genre"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Language"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/MainSubject"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Movie"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/ProductionCompany"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Writer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/ComedyMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/ComedyMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/Country -->
+
+    <owl:Class rdf:about="http://example.org/ns/Country">
+        <rdfs:subClassOf rdf:resource="http://example.org#Territory"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Director"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Genre"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Language"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/MainSubject"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Movie"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/ProductionCompany"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Writer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/CrimeMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/CrimeMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/Director -->
+
+    <owl:Class rdf:about="http://example.org/ns/Director">
+        <rdfs:subClassOf rdf:resource="http://example.org#Contributor"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Genre"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Language"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/MainSubject"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Movie"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/ProductionCompany"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Writer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/DramaMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/DramaMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/FamilyMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/FamilyMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/FantasyMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/FantasyMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/Genre -->
+
+    <owl:Class rdf:about="http://example.org/ns/Genre">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Language"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/MainSubject"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Movie"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/ProductionCompany"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Writer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/HistoryMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/HistoryMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/HorrorMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/HorrorMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/Language -->
+
+    <owl:Class rdf:about="http://example.org/ns/Language">
+        <rdfs:subClassOf rdf:resource="http://example.org#Presentation"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/MainSubject"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Movie"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/ProductionCompany"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Writer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/MainSubject -->
+
+    <owl:Class rdf:about="http://example.org/ns/MainSubject">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Movie"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/ProductionCompany"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Writer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/Movie -->
+
+    <owl:Class rdf:about="http://example.org/ns/Movie">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/ProductionCompany"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Writer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/MusicMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/MusicMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/MusicalMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/MusicalMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/MysteryMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/MysteryMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/ProductionCompany -->
+
+    <owl:Class rdf:about="http://example.org/ns/ProductionCompany">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://example.org/ns/Writer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/RomanceMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/RomanceMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/SportMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/SportMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/ThrillerMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/ThrillerMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/WarMovie -->
+
+    <owl:Class rdf:about="http://example.org/ns/WarMovie">
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ns/Writer -->
+
+    <owl:Class rdf:about="http://example.org/ns/Writer">
+        <rdfs:subClassOf rdf:resource="http://example.org#Contributor"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/ns/Movie"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/props/hasDuration"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">90</owl:minCardinality>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://example.org#LongFilm"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/ns/Movie"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/props/hasDuration"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">89</owl:maxCardinality>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://example.org#ShortFilm"/>
+    </owl:Class>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://example.org/props/hasAverageVote"/>
+        <owl:someValuesFrom>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:someValuesFrom>
+        <rdfs:subClassOf rdf:resource="http://example.org#HighRated"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://example.org/props/hasAverageVote"/>
+        <owl:someValuesFrom>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:someValuesFrom>
+        <rdfs:subClassOf rdf:resource="http://example.org#LowRated"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://example.org/props/hasYearPublished"/>
+        <owl:someValuesFrom>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:someValuesFrom>
+        <rdfs:subClassOf rdf:resource="http://example.org#00sMovie"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://example.org/props/hasYearPublished"/>
+        <owl:someValuesFrom>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</xsd:maxExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:someValuesFrom>
+        <rdfs:subClassOf rdf:resource="http://example.org#90sMovies"/>
+    </owl:Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

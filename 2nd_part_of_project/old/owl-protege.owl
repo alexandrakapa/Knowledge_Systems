@@ -8,6 +8,49 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt>
 
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Abduction>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Africa>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#America>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Asia>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#BiographyHistoryMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#BlackComedyMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ComedyActionMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ContemproraryFantasyMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Continent>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Contributor>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Death>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#DystopianMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Editor>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Europe>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Friendship>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#HighRated>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#HistoricalFictionMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Humanity>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#LongFilm>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Love>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#LowRated>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#MusicalArtist>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#MysteryRomanceMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#MysteryThrillerMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Oceania>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ParodyMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Post-apocalypticMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Presentation>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Religion>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Sacrifice>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#SciFiFantasyMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#SciFiMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ScreenWriter>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ShortFilm>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#SportsComedy>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#TeenDramaMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Territory>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ThrillerCrimeMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#TragedyMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#UrbanFantasyMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#WarDramaMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#00sMovie>))
+Declaration(Class(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#90sMovies>))
 Declaration(Class(<http://example.org/ns/ActionMovie>))
 Declaration(Class(<http://example.org/ns/Actor>))
 Declaration(Class(<http://example.org/ns/AdventureMovie>))
@@ -33,11 +76,18 @@ Declaration(Class(<http://example.org/ns/MusicalMovie>))
 Declaration(Class(<http://example.org/ns/MysteryMovie>))
 Declaration(Class(<http://example.org/ns/ProductionCompany>))
 Declaration(Class(<http://example.org/ns/RomanceMovie>))
-Declaration(Class(<http://example.org/ns/ScFiMovie>))
 Declaration(Class(<http://example.org/ns/SportMovie>))
 Declaration(Class(<http://example.org/ns/ThrillerMovie>))
 Declaration(Class(<http://example.org/ns/WarMovie>))
 Declaration(Class(<http://example.org/ns/Writer>))
+Declaration(ObjectProperty(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasContinent>))
+Declaration(ObjectProperty(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasContributor>))
+Declaration(ObjectProperty(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasEditor>))
+Declaration(ObjectProperty(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasMusicalArtist>))
+Declaration(ObjectProperty(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasPresentation>))
+Declaration(ObjectProperty(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasScreenWriter>))
+Declaration(ObjectProperty(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasTerritory>))
+Declaration(ObjectProperty(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#isDirectorOf>))
 Declaration(ObjectProperty(<http://example.org/props/hasActor>))
 Declaration(ObjectProperty(<http://example.org/props/hasColor>))
 Declaration(ObjectProperty(<http://example.org/props/hasCountry>))
@@ -66,8 +116,52 @@ Declaration(DataProperty(<http://example.org/props/isPartOfTheSeries>))
 #   Object Properties
 ############################
 
+# Object Property: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasContinent> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasContinent>)
+
+SubObjectPropertyOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasContinent> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasTerritory>)
+ObjectPropertyDomain(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasContinent> <http://example.org/ns/Movie>)
+ObjectPropertyRange(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasContinent> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Continent>)
+
+# Object Property: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasContributor> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasContributor>)
+
+ObjectPropertyDomain(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasContributor> <http://example.org/ns/Movie>)
+ObjectPropertyRange(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasContributor> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Contributor>)
+
+# Object Property: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasEditor> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasEditor>)
+
+SubObjectPropertyOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasEditor> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasContributor>)
+ObjectPropertyDomain(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasEditor> <http://example.org/ns/Movie>)
+ObjectPropertyRange(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasEditor> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Editor>)
+
+# Object Property: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasMusicalArtist> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasMusicalArtist>)
+
+SubObjectPropertyOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasMusicalArtist> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasContributor>)
+
+# Object Property: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasPresentation> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasPresentation>)
+
+SubObjectPropertyOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasPresentation> owl:topObjectProperty)
+ObjectPropertyDomain(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasPresentation> <http://example.org/ns/Movie>)
+
+# Object Property: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasScreenWriter> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasScreenWriter>)
+
+SubObjectPropertyOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasScreenWriter> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasContributor>)
+ObjectPropertyDomain(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasScreenWriter> <http://example.org/ns/Movie>)
+ObjectPropertyRange(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasScreenWriter> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ScreenWriter>)
+
+# Object Property: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasTerritory> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasTerritory>)
+
+ObjectPropertyDomain(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasTerritory> <http://example.org/ns/Movie>)
+ObjectPropertyRange(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasTerritory> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Territory>)
+
+# Object Property: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#isDirectorOf> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#isDirectorOf>)
+
+InverseObjectProperties(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#isDirectorOf> <http://example.org/props/hasDirector>)
+ObjectPropertyDomain(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#isDirectorOf> <http://example.org/ns/Director>)
+ObjectPropertyRange(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#isDirectorOf> <http://example.org/ns/Movie>)
+
 # Object Property: <http://example.org/props/hasActor> (<http://example.org/props/hasActor>)
 
+SubObjectPropertyOf(<http://example.org/props/hasActor> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasContributor>)
 ObjectPropertyDomain(<http://example.org/props/hasActor> <http://example.org/ns/Movie>)
 ObjectPropertyRange(<http://example.org/props/hasActor> <http://example.org/ns/Actor>)
 DisjointObjectProperties(<http://example.org/props/hasActor> <http://example.org/props/hasColor>)
@@ -79,6 +173,7 @@ DisjointObjectProperties(<http://example.org/props/hasActor> <http://example.org
 
 # Object Property: <http://example.org/props/hasColor> (<http://example.org/props/hasColor>)
 
+SubObjectPropertyOf(<http://example.org/props/hasColor> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasPresentation>)
 ObjectPropertyDomain(<http://example.org/props/hasColor> <http://example.org/ns/Movie>)
 ObjectPropertyRange(<http://example.org/props/hasColor> <http://example.org/ns/Color>)
 DisjointObjectProperties(<http://example.org/props/hasColor> <http://example.org/props/hasCountry>)
@@ -91,6 +186,7 @@ DisjointObjectProperties(<http://example.org/props/hasColor> <http://example.org
 
 # Object Property: <http://example.org/props/hasCountry> (<http://example.org/props/hasCountry>)
 
+SubObjectPropertyOf(<http://example.org/props/hasCountry> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasTerritory>)
 ObjectPropertyDomain(<http://example.org/props/hasCountry> <http://example.org/ns/Movie>)
 ObjectPropertyRange(<http://example.org/props/hasCountry> <http://example.org/ns/Country>)
 DisjointObjectProperties(<http://example.org/props/hasCountry> <http://example.org/props/hasDirector>)
@@ -102,6 +198,7 @@ DisjointObjectProperties(<http://example.org/props/hasCountry> <http://example.o
 
 # Object Property: <http://example.org/props/hasDirector> (<http://example.org/props/hasDirector>)
 
+SubObjectPropertyOf(<http://example.org/props/hasDirector> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasContributor>)
 ObjectPropertyDomain(<http://example.org/props/hasDirector> <http://example.org/ns/Movie>)
 ObjectPropertyRange(<http://example.org/props/hasDirector> <http://example.org/ns/Director>)
 DisjointObjectProperties(<http://example.org/props/hasDirector> <http://example.org/props/hasLanguage>)
@@ -111,6 +208,7 @@ DisjointObjectProperties(<http://example.org/props/hasDirector> <http://example.
 
 # Object Property: <http://example.org/props/hasLanguage> (<http://example.org/props/hasLanguage>)
 
+SubObjectPropertyOf(<http://example.org/props/hasLanguage> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasPresentation>)
 ObjectPropertyDomain(<http://example.org/props/hasLanguage> <http://example.org/ns/Movie>)
 ObjectPropertyRange(<http://example.org/props/hasLanguage> <http://example.org/ns/Language>)
 DisjointObjectProperties(<http://example.org/props/hasLanguage> <http://example.org/props/hasMainSubject>)
@@ -141,6 +239,7 @@ DisjointObjectProperties(<http://example.org/props/hasReceivedAward> <http://exa
 
 # Object Property: <http://example.org/props/hasWriter> (<http://example.org/props/hasWriter>)
 
+SubObjectPropertyOf(<http://example.org/props/hasWriter> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#hasContributor>)
 ObjectPropertyDomain(<http://example.org/props/hasWriter> <http://example.org/ns/Movie>)
 ObjectPropertyRange(<http://example.org/props/hasWriter> <http://example.org/ns/Writer>)
 
@@ -216,6 +315,7 @@ DisjointDataProperties(<http://example.org/props/hasDescription> <http://example
 
 # Data Property: <http://example.org/props/hasDuration> (<http://example.org/props/hasDuration>)
 
+FunctionalDataProperty(<http://example.org/props/hasDuration>)
 DataPropertyDomain(<http://example.org/props/hasDuration> <http://example.org/ns/Movie>)
 DataPropertyRange(<http://example.org/props/hasDuration> xsd:integer)
 DisjointDataProperties(<http://example.org/props/hasDuration> <http://example.org/props/hasMetascore>)
@@ -322,13 +422,173 @@ DataPropertyRange(<http://example.org/props/isPartOfTheSeries> xsd:string)
 #   Classes
 ############################
 
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Abduction> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Abduction>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Abduction> <http://example.org/ns/MainSubject>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Africa> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Africa>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Africa> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Continent>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#America> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#America>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#America> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Continent>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Asia> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Asia>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Asia> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Continent>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#BiographyHistoryMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#BiographyHistoryMovie>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#BiographyHistoryMovie> <http://example.org/ns/Movie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#BlackComedyMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#BlackComedyMovie>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#BlackComedyMovie> <http://example.org/ns/ComedyMovie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ComedyActionMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ComedyActionMovie>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ComedyActionMovie> <http://example.org/ns/Movie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ContemproraryFantasyMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ContemproraryFantasyMovie>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ContemproraryFantasyMovie> <http://example.org/ns/FantasyMovie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Continent> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Continent>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Continent> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Territory>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Death> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Death>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Death> <http://example.org/ns/MainSubject>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#DystopianMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#DystopianMovie>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#DystopianMovie> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#SciFiMovie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Editor> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Editor>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Editor> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Contributor>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Europe> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Europe>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Europe> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Continent>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Friendship> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Friendship>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Friendship> <http://example.org/ns/MainSubject>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#HighRated> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#HighRated>)
+
+EquivalentClasses(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#HighRated> DataSomeValuesFrom(<http://example.org/props/hasAverageVote> DatatypeRestriction(xsd:float xsd:minExclusive "7.0"^^xsd:float)))
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#HistoricalFictionMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#HistoricalFictionMovie>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#HistoricalFictionMovie> <http://example.org/ns/HistoryMovie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Humanity> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Humanity>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Humanity> <http://example.org/ns/MainSubject>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#LongFilm> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#LongFilm>)
+
+EquivalentClasses(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#LongFilm> DataSomeValuesFrom(<http://example.org/props/hasDuration> DatatypeRestriction(xsd:integer xsd:minInclusive "90"^^xsd:integer)))
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Love> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Love>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Love> <http://example.org/ns/MainSubject>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#LowRated> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#LowRated>)
+
+EquivalentClasses(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#LowRated> DataSomeValuesFrom(<http://example.org/props/hasAverageVote> DatatypeRestriction(xsd:float xsd:maxInclusive "7.0"^^xsd:float)))
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#MusicalArtist> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#MusicalArtist>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#MusicalArtist> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Contributor>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#MysteryRomanceMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#MysteryRomanceMovie>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#MysteryRomanceMovie> <http://example.org/ns/Movie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#MysteryThrillerMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#MysteryThrillerMovie>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#MysteryThrillerMovie> <http://example.org/ns/Movie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Oceania> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Oceania>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Oceania> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Continent>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ParodyMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ParodyMovie>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ParodyMovie> <http://example.org/ns/ComedyMovie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Post-apocalypticMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Post-apocalypticMovie>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Post-apocalypticMovie> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#SciFiMovie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Religion> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Religion>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Religion> <http://example.org/ns/MainSubject>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Sacrifice> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Sacrifice>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Sacrifice> <http://example.org/ns/MainSubject>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#SciFiFantasyMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#SciFiFantasyMovie>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#SciFiFantasyMovie> <http://example.org/ns/Movie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#SciFiMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#SciFiMovie>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#SciFiMovie> <http://example.org/ns/Movie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ScreenWriter> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ScreenWriter>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ScreenWriter> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Contributor>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ShortFilm> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ShortFilm>)
+
+EquivalentClasses(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ShortFilm> DataSomeValuesFrom(<http://example.org/props/hasDuration> DatatypeRestriction(xsd:integer xsd:maxExclusive "90"^^xsd:integer)))
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#SportsComedy> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#SportsComedy>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#SportsComedy> <http://example.org/ns/Movie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#TeenDramaMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#TeenDramaMovie>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#TeenDramaMovie> <http://example.org/ns/DramaMovie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ThrillerCrimeMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ThrillerCrimeMovie>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#ThrillerCrimeMovie> <http://example.org/ns/Movie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#TragedyMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#TragedyMovie>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#TragedyMovie> <http://example.org/ns/DramaMovie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#UrbanFantasyMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#UrbanFantasyMovie>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#UrbanFantasyMovie> <http://example.org/ns/FantasyMovie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#WarDramaMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#WarDramaMovie>)
+
+SubClassOf(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#WarDramaMovie> <http://example.org/ns/Movie>)
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#00sMovie> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#00sMovie>)
+
+EquivalentClasses(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#00sMovie> DataSomeValuesFrom(<http://example.org/props/hasYearPublished> DatatypeRestriction(xsd:integer xsd:minInclusive "2000"^^xsd:integer)))
+
+# Class: <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#90sMovies> (<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#90sMovies>)
+
+EquivalentClasses(<file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#90sMovies> DataSomeValuesFrom(<http://example.org/props/hasYearPublished> DatatypeRestriction(xsd:integer xsd:maxExclusive "2000"^^xsd:integer)))
+
 # Class: <http://example.org/ns/ActionMovie> (<http://example.org/ns/ActionMovie>)
 
 SubClassOf(<http://example.org/ns/ActionMovie> <http://example.org/ns/Movie>)
 
 # Class: <http://example.org/ns/Actor> (<http://example.org/ns/Actor>)
 
-SubClassOf(<http://example.org/ns/Actor> owl:Thing)
+SubClassOf(<http://example.org/ns/Actor> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Contributor>)
 DisjointClasses(<http://example.org/ns/Actor> <http://example.org/ns/Award>)
 DisjointClasses(<http://example.org/ns/Actor> <http://example.org/ns/Color>)
 DisjointClasses(<http://example.org/ns/Actor> <http://example.org/ns/Country>)
@@ -366,7 +626,7 @@ SubClassOf(<http://example.org/ns/BiographyMovie> <http://example.org/ns/Movie>)
 
 # Class: <http://example.org/ns/Color> (<http://example.org/ns/Color>)
 
-SubClassOf(<http://example.org/ns/Color> owl:Thing)
+SubClassOf(<http://example.org/ns/Color> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Presentation>)
 DisjointClasses(<http://example.org/ns/Color> <http://example.org/ns/Country>)
 DisjointClasses(<http://example.org/ns/Color> <http://example.org/ns/Director>)
 DisjointClasses(<http://example.org/ns/Color> <http://example.org/ns/Genre>)
@@ -382,7 +642,7 @@ SubClassOf(<http://example.org/ns/ComedyMovie> <http://example.org/ns/Movie>)
 
 # Class: <http://example.org/ns/Country> (<http://example.org/ns/Country>)
 
-SubClassOf(<http://example.org/ns/Country> owl:Thing)
+SubClassOf(<http://example.org/ns/Country> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Territory>)
 DisjointClasses(<http://example.org/ns/Country> <http://example.org/ns/Director>)
 DisjointClasses(<http://example.org/ns/Country> <http://example.org/ns/Genre>)
 DisjointClasses(<http://example.org/ns/Country> <http://example.org/ns/Language>)
@@ -397,7 +657,7 @@ SubClassOf(<http://example.org/ns/CrimeMovie> <http://example.org/ns/Movie>)
 
 # Class: <http://example.org/ns/Director> (<http://example.org/ns/Director>)
 
-SubClassOf(<http://example.org/ns/Director> owl:Thing)
+SubClassOf(<http://example.org/ns/Director> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Contributor>)
 DisjointClasses(<http://example.org/ns/Director> <http://example.org/ns/Genre>)
 DisjointClasses(<http://example.org/ns/Director> <http://example.org/ns/Language>)
 DisjointClasses(<http://example.org/ns/Director> <http://example.org/ns/MainSubject>)
@@ -436,7 +696,7 @@ SubClassOf(<http://example.org/ns/HorrorMovie> <http://example.org/ns/Movie>)
 
 # Class: <http://example.org/ns/Language> (<http://example.org/ns/Language>)
 
-SubClassOf(<http://example.org/ns/Language> owl:Thing)
+SubClassOf(<http://example.org/ns/Language> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Presentation>)
 DisjointClasses(<http://example.org/ns/Language> <http://example.org/ns/MainSubject>)
 DisjointClasses(<http://example.org/ns/Language> <http://example.org/ns/Movie>)
 DisjointClasses(<http://example.org/ns/Language> <http://example.org/ns/ProductionCompany>)
@@ -452,6 +712,8 @@ DisjointClasses(<http://example.org/ns/MainSubject> <http://example.org/ns/Write
 # Class: <http://example.org/ns/Movie> (<http://example.org/ns/Movie>)
 
 SubClassOf(<http://example.org/ns/Movie> owl:Thing)
+SubClassOf(<http://example.org/ns/Movie> ObjectSomeValuesFrom(<http://example.org/props/hasActor> <http://example.org/ns/Actor>))
+SubClassOf(<http://example.org/ns/Movie> DataSomeValuesFrom(<http://example.org/props/hasDuration> xsd:integer))
 DisjointClasses(<http://example.org/ns/Movie> <http://example.org/ns/ProductionCompany>)
 DisjointClasses(<http://example.org/ns/Movie> <http://example.org/ns/Writer>)
 
@@ -476,10 +738,6 @@ DisjointClasses(<http://example.org/ns/ProductionCompany> <http://example.org/ns
 
 SubClassOf(<http://example.org/ns/RomanceMovie> <http://example.org/ns/Movie>)
 
-# Class: <http://example.org/ns/ScFiMovie> (<http://example.org/ns/ScFiMovie>)
-
-SubClassOf(<http://example.org/ns/ScFiMovie> <http://example.org/ns/Movie>)
-
 # Class: <http://example.org/ns/SportMovie> (<http://example.org/ns/SportMovie>)
 
 SubClassOf(<http://example.org/ns/SportMovie> <http://example.org/ns/Movie>)
@@ -494,7 +752,7 @@ SubClassOf(<http://example.org/ns/WarMovie> <http://example.org/ns/Movie>)
 
 # Class: <http://example.org/ns/Writer> (<http://example.org/ns/Writer>)
 
-SubClassOf(<http://example.org/ns/Writer> owl:Thing)
+SubClassOf(<http://example.org/ns/Writer> <file:/home/alexandra/Knowledge_Systems/2nd_part_of_project/for_protege.nt#Contributor>)
 
 
 )
