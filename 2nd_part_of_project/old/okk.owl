@@ -590,25 +590,21 @@
 
     <owl:Class rdf:about="http://example.org#HighRated">
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://example.org/props/hasAverageVote"/>
-                        <owl:someValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <owl:withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</xsd:minExclusive>
-                                    </rdf:Description>
-                                </owl:withRestrictions>
-                            </rdfs:Datatype>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/props/hasAverageVote"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
         <owl:disjointWith rdf:resource="http://example.org#LowRated"/>
     </owl:Class>
     
@@ -633,13 +629,23 @@
     <!-- http://example.org#LongFilm -->
 
     <owl:Class rdf:about="http://example.org#LongFilm">
-        <owl:equivalentClass rdf:resource="http://example.org/ns/Movie"/>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://example.org/props/hasDuration"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">90</owl:minCardinality>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+        <owl:disjointWith rdf:resource="http://example.org#ShortFilm"/>
     </owl:Class>
     
 
@@ -656,25 +662,21 @@
 
     <owl:Class rdf:about="http://example.org#LowRated">
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://example.org/props/hasAverageVote"/>
-                        <owl:someValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <owl:withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </owl:withRestrictions>
-                            </rdfs:Datatype>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/props/hasAverageVote"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
     </owl:Class>
     
 
@@ -778,13 +780,22 @@
     <!-- http://example.org#ShortFilm -->
 
     <owl:Class rdf:about="http://example.org#ShortFilm">
-        <owl:equivalentClass rdf:resource="http://example.org/ns/Movie"/>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://example.org/props/hasDuration"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">89</owl:maxCardinality>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">89</xsd:maxExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
     </owl:Class>
     
 
@@ -863,6 +874,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://example.org#90sMovies"/>
     </owl:Class>
     
 
@@ -885,6 +898,7 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
@@ -933,7 +947,6 @@
     <!-- http://example.org/ns/Award -->
 
     <owl:Class rdf:about="http://example.org/ns/Award">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <owl:disjointWith rdf:resource="http://example.org/ns/Color"/>
         <owl:disjointWith rdf:resource="http://example.org/ns/Country"/>
         <owl:disjointWith rdf:resource="http://example.org/ns/Director"/>
@@ -1183,82 +1196,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://example.org/ns/Movie"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://example.org/props/hasDuration"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">90</owl:minCardinality>
-            </owl:Restriction>
-        </owl:intersectionOf>
-        <rdfs:subClassOf rdf:resource="http://example.org#LongFilm"/>
-    </owl:Class>
-    <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://example.org/ns/Movie"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://example.org/props/hasDuration"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">89</owl:maxCardinality>
-            </owl:Restriction>
-        </owl:intersectionOf>
-        <rdfs:subClassOf rdf:resource="http://example.org#ShortFilm"/>
-    </owl:Class>
-    <owl:Restriction>
-        <owl:onProperty rdf:resource="http://example.org/props/hasAverageVote"/>
-        <owl:someValuesFrom>
-            <rdfs:Datatype>
-                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                <owl:withRestrictions rdf:parseType="Collection">
-                    <rdf:Description>
-                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</xsd:minExclusive>
-                    </rdf:Description>
-                </owl:withRestrictions>
-            </rdfs:Datatype>
-        </owl:someValuesFrom>
-        <rdfs:subClassOf rdf:resource="http://example.org#HighRated"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <owl:onProperty rdf:resource="http://example.org/props/hasAverageVote"/>
-        <owl:someValuesFrom>
-            <rdfs:Datatype>
-                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                <owl:withRestrictions rdf:parseType="Collection">
-                    <rdf:Description>
-                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</xsd:maxInclusive>
-                    </rdf:Description>
-                </owl:withRestrictions>
-            </rdfs:Datatype>
-        </owl:someValuesFrom>
-        <rdfs:subClassOf rdf:resource="http://example.org#LowRated"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <owl:onProperty rdf:resource="http://example.org/props/hasYearPublished"/>
-        <owl:someValuesFrom>
-            <rdfs:Datatype>
-                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-                <owl:withRestrictions rdf:parseType="Collection">
-                    <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</xsd:minInclusive>
-                    </rdf:Description>
-                </owl:withRestrictions>
-            </rdfs:Datatype>
-        </owl:someValuesFrom>
-        <rdfs:subClassOf rdf:resource="http://example.org#00sMovie"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <owl:onProperty rdf:resource="http://example.org/props/hasYearPublished"/>
-        <owl:someValuesFrom>
-            <rdfs:Datatype>
-                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-                <owl:withRestrictions rdf:parseType="Collection">
-                    <rdf:Description>
-                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</xsd:maxExclusive>
-                    </rdf:Description>
-                </owl:withRestrictions>
-            </rdfs:Datatype>
-        </owl:someValuesFrom>
-        <rdfs:subClassOf rdf:resource="http://example.org#90sMovies"/>
-    </owl:Restriction>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org#Contributor"/>
+            <rdf:Description rdf:about="http://example.org#Presentation"/>
+            <rdf:Description rdf:about="http://example.org#Territory"/>
+            <rdf:Description rdf:about="http://example.org/ns/Award"/>
+            <rdf:Description rdf:about="http://example.org/ns/Genre"/>
+            <rdf:Description rdf:about="http://example.org/ns/MainSubject"/>
+            <rdf:Description rdf:about="http://example.org/ns/ProductionCompany"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
