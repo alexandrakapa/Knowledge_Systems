@@ -501,6 +501,14 @@
     <!-- http://example.org#BiographyHistoryMovie -->
 
     <owl:Class rdf:about="http://example.org#BiographyHistoryMovie">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/ns/BiographyMovie"/>
+                    <rdf:Description rdf:about="http://example.org/ns/HistoryMovie"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
     </owl:Class>
     
@@ -517,6 +525,14 @@
     <!-- http://example.org#ComedyActionMovie -->
 
     <owl:Class rdf:about="http://example.org#ComedyActionMovie">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/ns/ActionMovie"/>
+                    <rdf:Description rdf:about="http://example.org/ns/ComedyMovie"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
     </owl:Class>
     
@@ -692,6 +708,14 @@
     <!-- http://example.org#MysteryRomanceMovie -->
 
     <owl:Class rdf:about="http://example.org#MysteryRomanceMovie">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/ns/MysteryMovie"/>
+                    <rdf:Description rdf:about="http://example.org/ns/RomanceMovie"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
     </owl:Class>
     
@@ -700,6 +724,14 @@
     <!-- http://example.org#MysteryThrillerMovie -->
 
     <owl:Class rdf:about="http://example.org#MysteryThrillerMovie">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/ns/MysteryMovie"/>
+                    <rdf:Description rdf:about="http://example.org/ns/ThrillerMovie"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
     </owl:Class>
     
@@ -756,6 +788,14 @@
     <!-- http://example.org#SciFiFantasyMovie -->
 
     <owl:Class rdf:about="http://example.org#SciFiFantasyMovie">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org#SciFiMovie"/>
+                    <rdf:Description rdf:about="http://example.org/ns/FantasyMovie"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
     </owl:Class>
     
@@ -800,9 +840,17 @@
     
 
 
-    <!-- http://example.org#SportsComedy -->
+    <!-- http://example.org#SportsComedyMovie -->
 
-    <owl:Class rdf:about="http://example.org#SportsComedy">
+    <owl:Class rdf:about="http://example.org#SportsComedyMovie">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/ns/ComedyMovie"/>
+                    <rdf:Description rdf:about="http://example.org/ns/SportMovie"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
     </owl:Class>
     
@@ -827,6 +875,14 @@
     <!-- http://example.org#ThrillerCrimeMovie -->
 
     <owl:Class rdf:about="http://example.org#ThrillerCrimeMovie">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/ns/CrimeMovie"/>
+                    <rdf:Description rdf:about="http://example.org/ns/ThrillerMovie"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
     </owl:Class>
     
@@ -851,6 +907,14 @@
     <!-- http://example.org#WarDramaMovie -->
 
     <owl:Class rdf:about="http://example.org#WarDramaMovie">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/ns/DramaMovie"/>
+                    <rdf:Description rdf:about="http://example.org/ns/WarMovie"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
     </owl:Class>
     
@@ -874,15 +938,15 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <owl:disjointWith rdf:resource="http://example.org#90sMovies"/>
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
+        <owl:disjointWith rdf:resource="http://example.org#90sMovie"/>
     </owl:Class>
     
 
 
-    <!-- http://example.org#90sMovies -->
+    <!-- http://example.org#90sMovie -->
 
-    <owl:Class rdf:about="http://example.org#90sMovies">
+    <owl:Class rdf:about="http://example.org#90sMovie">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://example.org/props/hasYearPublished"/>
@@ -898,7 +962,7 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
     </owl:Class>
     
 
@@ -1194,3 +1258,4 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
