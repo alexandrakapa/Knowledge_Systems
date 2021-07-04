@@ -8,30 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:prop="http://example.org/props/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://example.org/myOntology"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://example.org/props/Dislikes -->
-
-    <owl:AnnotationProperty rdf:about="http://example.org/props/Dislikes"/>
-    
-
-
-    <!-- http://example.org/props/Likes -->
-
-    <owl:AnnotationProperty rdf:about="http://example.org/props/Likes"/>
+    <owl:Ontology rdf:about="http://example.org/n"/>
     
 
 
@@ -79,12 +56,6 @@
     
 
 
-    <!-- http://example.org/props/hasThematicCategory -->
-
-    <owl:ObjectProperty rdf:about="http://example.org/props/hasThematicCategory"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -93,12 +64,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://example.org/props/hasComments -->
-
-    <owl:DatatypeProperty rdf:about="http://example.org/props/hasComments"/>
     
 
 
@@ -165,27 +130,6 @@
     
 
 
-    <!-- http://example.org/ns/Category1 -->
-
-    <owl:Class rdf:about="http://example.org/ns/Category1">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://example.org/ns/Comedy"/>
-                    <rdf:Description rdf:about="http://example.org/ns/War_and_Peace"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/ns/Category2 -->
-
-    <owl:Class rdf:about="http://example.org/ns/Category2"/>
-    
-
-
     <!-- http://example.org/ns/Comedy -->
 
     <owl:Class rdf:about="http://example.org/ns/Comedy">
@@ -206,14 +150,6 @@
 
     <owl:Class rdf:about="http://example.org/ns/Crime">
         <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/ns/Crime_and_Punishment -->
-
-    <owl:Class rdf:about="http://example.org/ns/Crime_and_Punishment">
-        <rdfs:subClassOf rdf:resource="http://example.org/ns/ThematicCategory"/>
     </owl:Class>
     
 
@@ -306,14 +242,6 @@
     
 
 
-    <!-- http://example.org/ns/Noir -->
-
-    <owl:Class rdf:about="http://example.org/ns/Noir">
-        <rdfs:subClassOf rdf:resource="http://example.org/ns/ThematicCategory"/>
-    </owl:Class>
-    
-
-
     <!-- http://example.org/ns/Person -->
 
     <owl:Class rdf:about="http://example.org/ns/Person"/>
@@ -344,14 +272,6 @@
     
 
 
-    <!-- http://example.org/ns/ThematicCategory -->
-
-    <owl:Class rdf:about="http://example.org/ns/ThematicCategory">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
     <!-- http://example.org/ns/Thriller -->
 
     <owl:Class rdf:about="http://example.org/ns/Thriller">
@@ -360,34 +280,10 @@
     
 
 
-    <!-- http://example.org/ns/True_Love -->
-
-    <owl:Class rdf:about="http://example.org/ns/True_Love">
-        <rdfs:subClassOf rdf:resource="http://example.org/ns/ThematicCategory"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/ns/Vintage -->
-
-    <owl:Class rdf:about="http://example.org/ns/Vintage">
-        <rdfs:subClassOf rdf:resource="http://example.org/ns/ThematicCategory"/>
-    </owl:Class>
-    
-
-
     <!-- http://example.org/ns/War -->
 
     <owl:Class rdf:about="http://example.org/ns/War">
         <rdfs:subClassOf rdf:resource="http://example.org/ns/Movie"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/ns/War_and_Peace -->
-
-    <owl:Class rdf:about="http://example.org/ns/War_and_Peace">
-        <rdfs:subClassOf rdf:resource="http://example.org/ns/ThematicCategory"/>
     </owl:Class>
     
 
@@ -9862,12 +9758,6 @@
     <owl:NamedIndividual rdf:about="http://example.org/ns/Cree_Ivey">
         <rdf:type rdf:resource="http://example.org/ns/Actor"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- http://example.org/ns/Crime_and_Punishment -->
-
-    <owl:NamedIndividual rdf:about="http://example.org/ns/Crime_and_Punishment"/>
     
 
 
@@ -38732,12 +38622,6 @@
     
 
 
-    <!-- http://example.org/ns/Noir -->
-
-    <owl:NamedIndividual rdf:about="http://example.org/ns/Noir"/>
-    
-
-
     <!-- http://example.org/ns/Nolan_North -->
 
     <owl:NamedIndividual rdf:about="http://example.org/ns/Nolan_North">
@@ -44629,12 +44513,6 @@
     <owl:NamedIndividual rdf:about="http://example.org/ns/Roman_Coppola">
         <rdf:type rdf:resource="http://example.org/ns/Director"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- http://example.org/ns/Romance -->
-
-    <owl:NamedIndividual rdf:about="http://example.org/ns/Romance"/>
     
 
 
@@ -52909,12 +52787,6 @@
     
 
 
-    <!-- http://example.org/ns/Vintage -->
-
-    <owl:NamedIndividual rdf:about="http://example.org/ns/Vintage"/>
-    
-
-
     <!-- http://example.org/ns/Violet_ONeill -->
 
     <owl:NamedIndividual rdf:about="http://example.org/ns/Violet_ONeill">
@@ -53320,12 +53192,6 @@
     <owl:NamedIndividual rdf:about="http://example.org/ns/Wanna_Wattanajinda">
         <rdf:type rdf:resource="http://example.org/ns/Actor"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- http://example.org/ns/War_and_Peace -->
-
-    <owl:NamedIndividual rdf:about="http://example.org/ns/War_and_Peace"/>
     
 
 
@@ -54698,7 +54564,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Don Cesar, son of Zorro, is framed for murder while visiting Spain, and becomes the whip-wielding outlaw Don Q.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Don_Q_Son_of_Zorro</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -54848,7 +54713,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Terry_Kilburn"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Edwin_L_Marin"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">On Christmas Eve, Ebenezer Scrooge is visited by the spirit of his former partner, Jacob Marley. The deceased partner was as mean and miserly as Scrooge is now and he warns him to change his ways or face the consequences in the afterlife.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A_Christmas_Carol</prop:hasTitle>
     </owl:NamedIndividual>
@@ -54933,8 +54797,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A stern Russian woman sent to Paris on official business finds herself attracted to a man who represents everything she is supposed to detest.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ninotchka</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -55068,8 +54930,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dr. Gillespie is called in to investigate when a young man suffering from mental problems disappears on a killing spree.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calling_Dr._Gillespie</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -55097,7 +54957,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Sydney_Greenstreet"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Michael_Curtiz"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cynical American expatriate struggles to decide whether or not he should help his former lover and her fugitive husband escape French Morocco.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Casablanca</prop:hasTitle>
     </owl:NamedIndividual>
@@ -55155,7 +55014,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In order to close a business deal, Dagwood impersonates Mr. Dithers. While doing so he must avoid the nearly blind process server Jim Gray.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blondie_Knows_Best</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -55241,8 +55099,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The story of Mexican revolutionary</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Viva_Zapata!</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -55271,7 +55127,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/William_Pierson"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Samuel_Wilder"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When two escaping American World War II prisoners are killed, the German P.O.W. camp barracks black marketeer, J.J. Sefton, is suspected of being an informer.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stalag_17</prop:hasTitle>
     </owl:NamedIndividual>
@@ -55359,8 +55214,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Japan"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">American nuclear weapons testing results in the creation of a seemingly unstoppable, dinosaur-like beast.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Godzilla</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -55465,7 +55318,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Sunil_Dutt"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Mehboob_Khan"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/India"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In this melodrama, a poverty-stricken woman raises her sons through many trials and tribulations. But no matter the struggles, always sticks to her own moral code.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mother_India</prop:hasTitle>
     </owl:NamedIndividual>
@@ -55495,7 +55347,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Otto_Preminger"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cecile, decadent young girl who lives with her rich playboy father Raymond. When Anne, Raymond&apos;s old love interest, comes to Raymond&apos;s villa, Cecile is afraid for her way of life.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bonjour_tristesse</prop:hasTitle>
     </owl:NamedIndividual>
@@ -55571,7 +55422,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Alain_Resnais"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/France"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Japan"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A French actress filming an anti-war film in Hiroshima has an affair with a married Japanese architect as they share their differing perspectives on war.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hiroshima_mon_amour</prop:hasTitle>
     </owl:NamedIndividual>
@@ -55605,8 +55455,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A woman whose past is scorned by nearly everyone around her meets a man who&apos;d love her regardlessly- if only everyone else would allow them to.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porgy_and_Bess</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -55665,7 +55513,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Sal_Mineo"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Otto_L_Preminger"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The state of Israel is created in 1948, resulting in war with its Arab neighbors.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exodus</prop:hasTitle>
     </owl:NamedIndividual>
@@ -55775,8 +55622,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Italy"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A harried movie director retreats into his memories and fantasies.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8$u00BD</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -55803,7 +55648,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/William_Daniels"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Frank_Perry"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Staff and students at a rural school react to a warning of an imminent nuclear attack, not knowing whether it is real or a mistake.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ladybug_Ladybug</prop:hasTitle>
     </owl:NamedIndividual>
@@ -55833,7 +55677,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Tippi_Hedren"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Alfred_Hitchcock"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark marries Marnie although she is a habitual thief and has serious psychological problems, and tries to help her confront and resolve them.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marnie</prop:hasTitle>
     </owl:NamedIndividual>
@@ -56112,10 +55955,8 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Vic_Tayback"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Peter_Yates"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An all guts, no glory San Francisco cop becomes determined to find the underworld kingpin that killed the witness in his protection.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bullitt</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -56229,8 +56070,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Tina_Hedstr$u00F6m"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Alfred_Hitchcock"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A French Intelligence Agent becomes embroiled in the Cold War politics first with uncovering the events leading up to the 1962 Cuban Missile Crisis, and then back to France to break up an international Russian spy ring.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Topaz</prop:hasTitle>
     </owl:NamedIndividual>
@@ -56261,9 +56100,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Victor_Adamson"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Al_Adamson"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A former Civil War soldier returns to take revenge from a Yaqui chief who killed his wife in the marriage night. Death plays with both men, plus gun-runners and gold-runners, as her emissaries on Earth, to do a large harvest of souls.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Five_Bloody_Graves</prop:hasTitle>
     </owl:NamedIndividual>
@@ -56314,7 +56150,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Rod_Taylor"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Michelangelo_Antonioni"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">At Zabriskie Point, United States&apos; lowest point, two perfect strangers meet; an undergraduate dreamer and a young hippie student who start off an unrestrained romance, making love on the dusty terrain.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zabriskie_Point</prop:hasTitle>
     </owl:NamedIndividual>
@@ -56347,8 +56182,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dracula conspires with a mad doctor to resurrect the Frankenstein Monster.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dracula_vs._Frankenstein</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -56377,7 +56210,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/William_Grannel"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Don_Schain"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A rich society girl is recruited to go undercover and expose a drug/blackmail/prostitution ring in her small town.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ginger</prop:hasTitle>
     </owl:NamedIndividual>
@@ -56443,7 +56275,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/WestGermany"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The reign of the tormented Ludwig, king of Bavaria, from 1864 to 1886.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ludwig</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -56474,8 +56305,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/SovietUnion"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A psychologist is sent to a station orbiting a distant planet in order to discover what has caused the crew to go insane.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solaris</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -56535,8 +56364,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A couple of high school grads spend one final night cruising the strip with their buddies before they go off to college.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">American_Graffiti</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -56583,11 +56410,8 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Victoria_Thompson"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Ted_Post"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">At Harrad College, where controversial coed living situations are established, the students are forced to confront their sexuality in ways that society previously shunned. Part of the ...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Harrad_Experiment</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -56616,8 +56440,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/William_Smithers"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Robert_Michael_Winner"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">During the Cold War, the CIA orders free-lance operative Scorpio to assassinate his former CIA mentor Cross and a deadly cat-and-mouse game ensues.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scorpio</prop:hasTitle>
     </owl:NamedIndividual>
@@ -56679,12 +56501,8 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Stanley_Kubrick"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Irish rogue wins the heart of a rich widow and assumes her dead husband&apos;s aristocratic position in 18th-century England.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barry_Lyndon</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -56890,7 +56708,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mentally unstable veteran works as a nighttime taxi driver in New York City, where the perceived decadence and sleaze fuels his urge for violent action by attempting to liberate a presidential campaign worker and an underage prostitute.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taxi_Driver</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -56907,7 +56724,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Lamberto_Bava"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Mario_Bava"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Italy"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A couple is terrorized in their new house haunted by the vengeful ghost of the woman&apos;s former husband who possesses her young son.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shock</prop:hasTitle>
     </owl:NamedIndividual>
@@ -57073,12 +56889,8 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Ridley_Scott"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">After a space merchant vessel receives an unknown transmission as a distress call, one of the crew is attacked by a mysterious life form and they soon realize that its life cycle has merely begun.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alien</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -57138,7 +56950,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Ken_Annakin"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Austria"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/WestGermany"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When French King Louis XIV (Beau Bridges) learns that his twin brother, Philippe (Beau Bridges), could usurp his crown, he sets out to imprison him in the Bastille prison but four loyal musketeers are protecting Philippe.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Fifth_Musketeer</prop:hasTitle>
     </owl:NamedIndividual>
@@ -57197,7 +57008,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Yaphet_Kotto"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Stuart_Rosenberg"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The new warden of a small prison farm in Arkansas tries to clean it up of corruption after initially posing as an inmate.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brubaker</prop:hasTitle>
     </owl:NamedIndividual>
@@ -57230,8 +57040,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Victorian surgeon rescues a heavily disfigured man who is mistreated while scraping a living as a side-show freak. Behind his monstrous façade, there is revealed a person of kindness, intelligence and sophistication.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Elephant_Man</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -57293,10 +57101,8 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Ra$u00FAl_Gimenez"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Rainer_Werner_Fassbinder"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/WestGermany"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In 1938, a German singer falls in love with a Jewish composer in Zurich, who helps Jews flee Nazi Germany. She wants to help but is forced back to Germany. Her song &quot;Lili Marleen&quot; becomes a hit with soldiers and the Nazi top.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lili_Marleen</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -57533,7 +57339,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Hans_Wypr$u00E4chtiger"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Rainer_Werner_Fassbinder"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/WestGermany"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partially based upon the life of Sybille Schmitz, WI found fame under the Nazi regime, but woods career was destroyed afterwards, Veronika Voss is a once prominent UFA actress, kept by her doctor, raises suspicion in a sports journalist.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veronika_Voss</prop:hasTitle>
     </owl:NamedIndividual>
@@ -57626,8 +57431,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A prince and a fellowship of companions set out to rescue his bride from a fortress of alien invaders who have arrived on their home planet.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Krull</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -57653,7 +57456,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Utpal_Dutt"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Hrishikesh_Mukherjee"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/India"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sparkling comedy about a meddling friend whose attempt to rekindle the spark in his friend&apos;s relationship with his wife of seven years leads to complications to their lives, and to the ...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rang_Birangi</prop:hasTitle>
     </owl:NamedIndividual>
@@ -57685,8 +57487,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In 1980 Miami, a determined Cuban immigrant takes over a drug cartel and succumbs to greed.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarface</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -57715,11 +57515,8 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Bob_Fosse"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/WestGermany"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A successful young model finds trouble when her obsessive manager-turned-husband becomes dangerously jealous. Based on the true story of 1980 Playmate of the Year Dorothy Stratten.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Star_80</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -57874,7 +57671,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A boy inadvertently breaks three important rules concerning his new pet and unleashes a horde of malevolently mischievous monsters on a small town.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gremlins</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -57933,7 +57729,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Terry_Gilliam"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bureaucrat in a dystopic society becomes an enemy of the state as he pursues the woman of his dreams.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brazil</prop:hasTitle>
     </owl:NamedIndividual>
@@ -57963,7 +57758,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Tom_Hamil"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/David_Oliver_Pfeil"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thanks to a strange crystal, a shy student finds himself in the Stone Age, where he falls in love with a beautiful cave woman and helps her clan stave off a tribe of cannibals.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cavegirl</prop:hasTitle>
     </owl:NamedIndividual>
@@ -58022,7 +57816,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Sang-ok_Shin"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Japan"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/NorthKorea"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In feudal Korea, the evil King becomes aware that there is a peasant rebellion being planned in the country. He steals all the iron farming tools and cooking pots from the people so that he...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pulgasari</prop:hasTitle>
     </owl:NamedIndividual>
@@ -58053,10 +57846,8 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Robert_Sampson"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Stuart_Gordon"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">After an odd new medical student arrives on campus, a dedicated local and his girlfriend become involved in bizarre experiments centering around the re-animation of dead tissue.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Re-Animator</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
     </owl:NamedIndividual>
     
 
@@ -58086,8 +57877,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rocky Balboa proudly holds the world heavyweight boxing championship, but a new challenger has stepped forward: Drago, a six-foot-four, 261-pound fighter who has the backing of the Soviet Union.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rocky_IV</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -58176,7 +57965,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/France"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Italy"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Switzerland"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A greedy landowner and his backward nephew conspire to block the only water source for an adjoining property in order to bankrupt the owner and force him to sell.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jean_de_Florette</prop:hasTitle>
     </owl:NamedIndividual>
@@ -58358,8 +58146,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Japan"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A secret military project endangers Neo-Tokyo when it turns a biker gang member into a rampaging psychic psychopath who can only be stopped by two teenagers and a group of psychics.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Akira</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -58387,7 +58173,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Oca_Spirito"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Carlos_Enrique_Valera_Y_Peralta-Ramos"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Set in modern day Buenos Aires, the film centers around a relationship between two emotionally crippled roommates. Adrian LeDuc is a lonely sociopath who is forced to rent his insane ...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apartment_Zero</prop:hasTitle>
     </owl:NamedIndividual>
@@ -58477,7 +58262,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Tim_Burton"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Dark Knight of Gotham City begins his war on crime with his first major enemy being Jack Napier, a criminal who becomes the clownishly homicidal Joker.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman</prop:hasTitle>
     </owl:NamedIndividual>
@@ -58565,7 +58349,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Victor_Melleney"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/William_A_Levey"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/SouthAfrica"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A motorcycle gang kidnaps a young woman, Josie, from a diner and brutally kills her. Many years later, the girl&apos;s father finds a magic crystal that can bring the life back to dead objects. ...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hellgate</prop:hasTitle>
     </owl:NamedIndividual>
@@ -58597,7 +58380,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Michael_Anderson"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Canada"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An NTSB investigator seeking the cause of an airline disaster meets a warrior woman from 1000 years in the future. She replaces the people from airplanes before they crash with corpses with the same features.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Millennium</prop:hasTitle>
     </owl:NamedIndividual>
@@ -58658,8 +58440,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unhappy Larry Burrows sees what his life could&apos;ve been like, had he made that winning home run as a teenager.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mr._Destiny</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -58719,7 +58499,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reluctantly retired from fighting, Rocky takes charge of Mickey&apos;s gym and agrees to train a young protégé who&apos;s hungry for success.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rocky_V</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -58751,7 +58530,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A huge Solar flare is predicted to fry Earth. Astronauts must fly to the sun to drop a talking bomb (Freddy) at the right time so the flare will point somewhere else. Giant IXL Corp C.E.O. ...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solar_Crisis</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
     </owl:NamedIndividual>
     
 
@@ -58834,7 +58612,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Presented in a surreal, gory and entirely visual manner, Begotten tells of the death of religion, the abuse of nature by Man and a nihilistic outlook on what life ultimately is.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Begotten</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -58921,8 +58698,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Jean-Fran$u00E7ois_Balmer"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Claude_Chabrol"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/France"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In nineteenth-century France, the romantic daughter of a country squire marries a dull country doctor. To escape boredom, she throws herself into love affairs with a suave local landowner and a law student, and runs up ruinous debts.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Madame_Bovary</prop:hasTitle>
     </owl:NamedIndividual>
@@ -58955,7 +58730,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/France"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two best friends set out on an adventure, but it soon turns around to a terrifying escape from being hunted by the police, as these two girls escape for the crimes they committed.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thelma_&amp;_Louise</prop:hasTitle>
     </owl:NamedIndividual>
@@ -59281,7 +59055,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Le$u00F3n_Singer"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Mike_Figgis"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">After being arrested during a manic episode, a man who suffers from bipolar disorder is treated by a psychiatrist who begins to develop romantic feelings towards him.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mr._Jones</prop:hasTitle>
     </owl:NamedIndividual>
@@ -59343,7 +59116,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Jon_Amiel"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/France"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A farmer returns home from the Civil War, but his wife begins to suspect that the man is an impostor.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sommersby</prop:hasTitle>
     </owl:NamedIndividual>
@@ -59372,11 +59144,8 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Tim_Jan$u00DFen"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Helge_Schneider"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Germany"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detective 00 Schneider has to return from retirement to catch a mad art collector.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">00_Schneider_-_Jagd_auf_Nihil_Baxter</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -59588,8 +59357,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Portugal"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The director Friedrich Monroe has trouble with finishing a silent b&amp;w movie about Lisbon. He calls his friend, the sound engineer Phillip Winter, for help. As Winter arrives Lisbon weeks ...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lisbon_Story</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -59618,8 +59385,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In a remote woodland cabin, a small town doctor discovers Nell - a beautiful young hermit woman with many secrets.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nell</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -59647,7 +59412,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Ving_Rhames"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Quentin_Tarantino"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pulp_Fiction</prop:hasTitle>
     </owl:NamedIndividual>
@@ -59711,8 +59475,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">On the run after murdering a man, accountant William Blake encounters a strange Native American man named Nobody who prepares him for his journey into the spiritual world.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dead_Man</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -59773,7 +59535,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Four interlocking tales that take place in a fading hotel on New Year&apos;s Eve.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Four_Rooms</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -59981,8 +59742,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The brief life of</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basquiat</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -60042,7 +59801,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Deepa_Mehta"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Canada"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/India"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two women who are abandoned by their husbands, find love and solace in each other.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fire</prop:hasTitle>
     </owl:NamedIndividual>
@@ -60166,8 +59924,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An American agent, under false suspicion of disloyalty, must discover and expose the real spy without the help of his organization.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mission:_Impossible</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -60195,7 +59951,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/W_Earl_Brown"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Wes_Craven"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A year after the murder of her mother, a teenage girl is terrorized by a new killer, who targets the girl and her friends by using horror films as part of a deadly game.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scream</prop:hasTitle>
     </owl:NamedIndividual>
@@ -60228,8 +59983,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In a desperate attempt to win a basketball match and earn their freedom, the Looney Tunes seek the aid of retired basketball champion, Michael Jordan.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Space_Jam</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -60316,7 +60069,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Shannon_Roy$u00E9"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Jean_van_de_Velde"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Netherlands"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leading up to their 500th match, the late twenty-something members of a Dutch amateur soccer team have their intimate bond put to the test as they each find themselves facing increasing responsibilities off the pitch.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">All_Stars</prop:hasTitle>
     </owl:NamedIndividual>
@@ -60379,8 +60131,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Newly paroled ex-con and former U.S. Ranger Cameron Poe finds himself trapped in a prisoner transport plane when the passengers seize control.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Con_Air</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -60472,8 +60222,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A middle-aged woman finds herself in the middle of a huge conflict that will either make her a profit or cost her life.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jackie_Brown</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -60532,7 +60280,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Willi_Thomczyk"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Thomas_Jahn"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Germany"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two terminally ill patients escape from a hospital, steal a car and rush towards the sea.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Knockin_on_Heavens_Door</prop:hasTitle>
     </owl:NamedIndividual>
@@ -60563,8 +60310,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Steve_Rankin"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Curtis_Hanson"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">As corruption grows in 1950s Los Angeles, three policemen - one strait-laced, one brutal, and one sleazy - investigate a series of murders with their own brand of justice.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L.A._Confidential</prop:hasTitle>
     </owl:NamedIndividual>
@@ -60594,7 +60339,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Marie-Fran$u00E7oise_Theodore"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Theodore_Witcher"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darius Lovehall is a young black poet in Chicago who starts dating Nina Mosley, a beautiful and talented photographer. While trying to figure out if they&apos;ve got a &quot;love thing&quot; or are just &quot;...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Love_Jones</prop:hasTitle>
     </owl:NamedIndividual>
@@ -60655,8 +60399,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Germany"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An eccentric doctor tries as best he can to lead a pleasant life, despite the bad tricks played by the residents of an orphanage.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Praxis_Dr._Hasenbein</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -60748,8 +60490,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Titanic</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -60841,7 +60581,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A New York City doctor embarks on a harrowing, night-long odyssey of sexual and moral discovery after his wife reveals a painful secret to him.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eyes_Wide_Shut</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -60871,7 +60610,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Roland_Emmerich"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Japan"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A giant, reptilian monster surfaces, leaving destruction in its wake as it strides into New York City. To stop it, an earthworm scientist, his reporter ex-girlfriend, and other unlikely heroes team up to save their city.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Godzilla</prop:hasTitle>
     </owl:NamedIndividual>
@@ -60938,8 +60676,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tragi-comic, romantic whodunnit set in a run down hotel which plays host to mentally ill people too poor to afford medical insurance.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Million_Dollar_Hotel</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -60971,8 +60707,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IMF agent Ethan Hunt is sent to Sydney to find and destroy a genetically modified disease called &quot;Chimera&quot;.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mission:_Impossible_II</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -61062,8 +60796,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two 1990s teenage siblings find themselves in a 1950s sitcom, where their influence begins to profoundly change that complacent world.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pleasantville</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -61096,8 +60828,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A game designer on the run from assassins must play her latest virtual reality creation with a marketing trainee to determine if the game has been damaged.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eXistenZ</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -61126,11 +60856,8 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Will_Smith"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Barry_Sonnenfeld"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agent J is sent to find Agent K and restore his memory after the re-appearance of a case from K&apos;s past.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Men_in_Black_II</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -61309,8 +61036,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The life of a simple bookshop owner changes when he meets the most famous film star in the world.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notting_Hill</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -61367,7 +61092,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Valerie_Gale"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Shekhar_Kapur"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The early years of the reign of Elizabeth I of England and her difficult task of learning what is necessary to be a monarch.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elizabeth</prop:hasTitle>
     </owl:NamedIndividual>
@@ -61396,7 +61120,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Tom_Wamsley"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Ed_Radtke"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An abandoned teen jumps a freight train in Philadelphia intent on reaching his uncle in Indiana, whom he believes will help him with financial difficulties including a pregnant girlfriend. ...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Dream_Catcher</prop:hasTitle>
     </owl:NamedIndividual>
@@ -61429,7 +61152,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Poland"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the start of the 1990s, the British government decided to send prisoners with short sentences to serve abroad. Some went to Romania, to serve in schools, orphanages, and hospitals. Some were brutal beasts.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bandyta</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -61485,7 +61207,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Scott_Foley"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Wesley_Earl_Craven"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">While Sidney and her friends visit the Hollywood set of Stab 3, the third film based on the Woodsboro murders, another Ghostface killer rises to terrorize them.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scream_3</prop:hasTitle>
     </owl:NamedIndividual>
@@ -61549,7 +61270,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Germany"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An insurance agent is sent by her employer to track down and help capture an art thief.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Entrapment</prop:hasTitle>
     </owl:NamedIndividual>
@@ -61581,8 +61301,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fight_Club</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -61636,8 +61354,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The world&apos;s greatest ever playwright,</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shakespeare_in_Love</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -61759,7 +61475,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A German submarine is boarded by disguised American submariners trying to capture their Enigma cipher machine.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U-571</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -61909,8 +61624,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Canada"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Something is eating the residents of Exceptional Vista!</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Top_of_the_Food_Chain</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -61940,8 +61653,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Joseph_McGinty_McG_Nichol"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Germany"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Three women, detectives with a mysterious boss, retrieve stolen voice-ID software, using martial arts, tech skills, and sex appeal.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charlies_Angels</prop:hasTitle>
     </owl:NamedIndividual>
@@ -61974,8 +61685,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the future, an alien race uses androids as bombs to attack Earth. A government weapons specialist is accused of being one such android and sets out to prove his innocence.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Impostor</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -62035,8 +61744,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/John_Singleton"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Germany"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">New York City police detective John Shaft (nephew of the original 1970s detective) goes on a personal mission to make sure the son of a real estate tycoon is brought to justice after a racially-motivated murder.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shaft</prop:hasTitle>
     </owl:NamedIndividual>
@@ -62287,10 +61994,8 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Jordi_Moll$u00E0"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Michael_Benjamin_Bay"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two loose-cannon narcotics cops investigate the flow of Ecstasy into Florida from a Cuban drug cartel.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bad_Boys_II</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
     </owl:NamedIndividual>
     
 
@@ -62317,7 +62022,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Rod_McLachlan"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Paul_Thomas_Anderson"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An epic mosaic of interrelated characters in search of love, forgiveness, and meaning in the San Fernando Valley.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magnolia</prop:hasTitle>
     </owl:NamedIndividual>
@@ -62350,8 +62054,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The alumni cast of a space opera television series have to play their roles as the real thing when an alien race needs their help. However, they also have to defend both Earth and the alien race from a reptilian warlord.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galaxy_Quest</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -62442,8 +62144,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Germany"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Mexico"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A conservative judge is appointed by the President to spearhead America&apos;s escalating war against drugs, only to discover that his teenage daughter is a crack addict. Two DEA agents protect an informant. A jailed drug baron&apos;s wife attempts to carry on the family business.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Traffic</prop:hasTitle>
     </owl:NamedIndividual>
@@ -62478,8 +62178,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When the first manned mission to Mars meets with a catastrophic and mysterious disaster after reporting an unidentified structure, a rescue mission is launched to investigate the tragedy and bring back any survivors.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mission_to_Mars</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -62508,7 +62206,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Zez$u00E9_Motta"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Carlos_Diegues"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Brazil"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In a dangerous but human Rio&apos;s slum, rises the love affair betwen Orfeu and Eurídice, provoking jealousy and violence in times of carnival.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orfeu</prop:hasTitle>
     </owl:NamedIndividual>
@@ -62628,8 +62325,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meg Peters just can&apos;t seem to find Mr. Right, she bleaches her hair blonde and we answer the age old question &quot;Do blondes really have more fun?&quot;</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Totally_Blonde</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -62660,7 +62355,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Denmark"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Italy"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Sweden"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In 1975, the dynamics of a Swedish commune begin to change upon the arrival of a beaten wife and her two kids.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Together</prop:hasTitle>
     </owl:NamedIndividual>
@@ -62778,7 +62472,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Gary_Walkow"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Mexico"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The story of writer William Seward Burroughs and his wife.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beat</prop:hasTitle>
     </owl:NamedIndividual>
@@ -62841,7 +62534,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/T$u00E9a_Leoni"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Brett_Ratner"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fast-lane investment broker, offered the opportunity to see how the other half lives, wakes up to find that his sports car and girlfriend have become a mini-van and wife.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Family_Man</prop:hasTitle>
     </owl:NamedIndividual>
@@ -62874,8 +62566,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A woman is in love with a man in love with another woman, and all three have designs on a young man raised as an ape.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human_Nature</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -62939,7 +62629,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Japanese gangster is exiled to Los Angeles where his brother lives with a small but respectable multi-racial gang, who he inspires to expand their influence.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brother</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -63001,7 +62690,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/William_Fichtner"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Kurt_Wimmer"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In an oppressive future where all forms of feeling are illegal, a man in charge of enforcing the law rises to overthrow the system and state.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Equilibrium</prop:hasTitle>
     </owl:NamedIndividual>
@@ -63178,7 +62866,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Stephen_Daldry"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/France"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A talented young boy becomes torn between his unexpected love of dance and the disintegration of his family.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Billy_Elliot</prop:hasTitle>
     </owl:NamedIndividual>
@@ -63267,7 +62954,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Simon_Kunz"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Rob_Green"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Germany, 1944. The forests of the Ardennes. A platoon of battle weary German soldiers, forced into confusion and retreat by advancing Allied forces, take refuge in an isolated Siegfried Line bunker.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Bunker</prop:hasTitle>
     </owl:NamedIndividual>
@@ -63396,7 +63082,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A man is picked up by a fishing boat, bullet-riddled and suffering from amnesia, before racing to elude assassins and attempting to regain his memory.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Bourne_Identity</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -63428,8 +63113,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When motorcycle rider Johnny Blaze sells his soul to the Devil to save his father&apos;s life, he is transformed into the Ghost Rider, the Devil&apos;s own bounty hunter, and is sent to hunt down sinners.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ghost_Rider</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -63459,7 +63142,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Cameron_Bruce_Crowe"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Spain"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-indulgent and vain publishing magnate finds his privileged life upended after a vehicular accident with a resentful lover.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vanilla_Sky</prop:hasTitle>
     </owl:NamedIndividual>
@@ -63491,7 +63173,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Shyam_Ramsay"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Tulsi_Ramsay"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/India"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A beautiful young girl, unfortunately possessed from her childhood by a vengeful spirit, wanders around lonely places to seduce and kill people and thus, gradually becoming lost into a dark world of revenge and lust.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veerana</prop:hasTitle>
     </owl:NamedIndividual>
@@ -63522,7 +63203,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Yeong-ae_Lee"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Chan-wook_Park"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/SouthKorea"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">After a shooting incident at the North/South Korean border/DMZ leaves 2 North Korean soldiers dead, a neutral Swiss/Swedish team investigates, what actually happened.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joint_Security_Area</prop:hasTitle>
     </owl:NamedIndividual>
@@ -63577,7 +63257,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Japan"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the future, the Japanese government captures a class of ninth-grade students and forces them to kill each other under the revolutionary &quot;Battle Royale&quot; act.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Battle_Royale</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -63670,7 +63349,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Simon_Wells"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UnitedArabEmirates"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hoping to alter the events of the past, a 19th century inventor instead travels 800,000 years into the future, where he finds humankind divided into two warring races.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Time_Machine</prop:hasTitle>
     </owl:NamedIndividual>
@@ -63704,8 +63382,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A betrayed intelligence officer enlists the aid of a prostitute to prove his innocence from a deadly conspiracy while returning a favor to her.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kiss_of_the_Dragon</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -63794,8 +63470,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In 1976, Tony Wilson sets up Factory Records and brings Manchester&apos;s music to the world.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24_Hour_Party_People</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -63829,8 +63503,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The story of how the novel &quot;Mrs. Dalloway&quot; affects three generations of women, all of whom, in one way or another, have had to deal with suicide in their lives.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Hours</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -63858,8 +63530,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saya is a Japanese vampire slayer whose next mission is in a high school on a US military base in 1960s Japan, where she poses as a student. She uses a katana/samurai sword to kill vampires.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood:_The_Last_Vampire</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -63954,7 +63624,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Christopher_Nolan"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two Los Angeles homicide detectives are dispatched to a northern town where the sun doesn&apos;t set to investigate the methodical murder of a local teen.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insomnia</prop:hasTitle>
     </owl:NamedIndividual>
@@ -64015,10 +63684,8 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/G$u00E9rard_Krawczyk"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/France"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Japan"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In Japan for the funeral of his long-lost love, a tough French detective learns that he also has a teenage daughter and that her life is in danger from the Yakuza.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wasabi</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -64046,7 +63713,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Fedja_van_Hu$u00EAt"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Hans_Pos"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Netherlands"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The gripping true story of a Dutch girl who made an amazing career in the international narcotics world.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bella_Bettien</prop:hasTitle>
     </owl:NamedIndividual>
@@ -64077,7 +63743,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/William_Devane"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Robby_Henson"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The sheriff investigates a tipped over truck full of shoes. A cute woman is found dead. Forensics reveals that she died from a .22, not a truck, and she has a dick. As election of governor, sheriff etc. is near, things are tense.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Badge</prop:hasTitle>
     </owl:NamedIndividual>
@@ -64142,7 +63807,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A successful 19th century French stockbroker (Sutherland) leaves his profession to become an artist in Paris.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paradise_Found</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -64205,7 +63869,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evan Treborn suffers blackouts during significant events of his life. As he grows up, he finds a way to remember these lost memories and a supernatural way to alter his life by reading his journal.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Butterfly_Effect</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -64234,11 +63897,8 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Mich$u00E8le_Garcia"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/G$u00E9rard_Jugnot"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/France"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In 1942, in an occupied Paris, the apolitical grocer Edmond Batignole lives with his wife and daughter in a small apartment in the building of his grocery. When his future son-in-law and ...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monsieur_Batignole</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -64326,7 +63986,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Wilson_Jermaine_Heredia"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Chris_Columbus"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is the film version of the Pulitzer and Tony Award winning musical about Bohemians in the East Village of New York City struggling with life, love and AIDS, and the impacts they have on America.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rent</prop:hasTitle>
     </owl:NamedIndividual>
@@ -64468,8 +64127,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A friendship between two young men is tested when they go for a hike in a desert and forget to bring any water or food with them.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gerry</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -64590,7 +64247,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Determined to have a normal family life once his mother gets out of prison, a Scottish teenager from a tough background sets out to raise the money for a home.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sweet_Sixteen</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -64618,7 +64274,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Philip_Zand$u00E9n"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Susanne_Bier"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Denmark"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Dogme film about an engaged couple that is torn apart after the man is paralyzed in an accident, and the woman falls in love with the husband of the woman who caused the accident.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open_Hearts</prop:hasTitle>
     </owl:NamedIndividual>
@@ -64682,7 +64337,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Germany"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Italy"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IMF agent Ethan Hunt comes into conflict with a dangerous and sadistic arms dealer who threatens his life and his fiancée in response.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mission:_Impossible_III</prop:hasTitle>
     </owl:NamedIndividual>
@@ -64769,7 +64423,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Hungary"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selene, a vampire warrior, is entrenched in a conflict between vampires and werewolves, while falling in love with Michael, a human who is sought by werewolves for unknown reasons.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Underworld</prop:hasTitle>
     </owl:NamedIndividual>
@@ -64830,7 +64483,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Fran$u00E7ois_Ozon"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/France"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A British mystery author visits her publisher&apos;s home in the South of France, where her interaction with his unusual daughter sets off some touchy dynamics.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swimming_Pool</prop:hasTitle>
     </owl:NamedIndividual>
@@ -64923,7 +64575,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A shy woman, endowed with the speed, reflexes, and senses of a cat, walks a thin line between criminal and hero, even as a detective doggedly pursues her, fascinated by both of her personas.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catwoman</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -64987,8 +64638,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The chronically suicidal Wilbur and his good-hearted big brother Harbour are in their thirties, when their father dies, leaving them with nothing but a worn down second-hand bookshop in Glasgow.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wilbur_Wants_to_Kill_Himself</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -65226,7 +64875,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Paula_Garc$u00E9s"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Tom_McCarthy"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When his only friend dies, a man born with dwarfism moves to rural New Jersey to live a life of solitude, only to meet a chatty hot dog vendor and a woman dealing with her own personal loss.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Station_Agent</prop:hasTitle>
     </owl:NamedIndividual>
@@ -65323,7 +64971,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Malin_Cr$u00E9pin"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Daniel_Lind_Lagerl$u00F6f"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Sweden"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suburban priest falls in love with woman in wheelchair.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miffo</prop:hasTitle>
     </owl:NamedIndividual>
@@ -65393,10 +65040,8 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Thailand"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alexander, the King of Macedonia and one of the greatest army leaders in the history of warfare, conquers much of the known world.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alexander</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
     </owl:NamedIndividual>
     
 
@@ -65455,8 +65100,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A writer&apos;s young assistant becomes both pawn and catalyst in his boss&apos;s disintegrating household.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Door_in_the_Floor</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -65550,8 +65193,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group of animals who have spent all their life in a New York zoo end up in the jungles of Madagascar, and must adjust to living in the wild.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Madagascar</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -65636,7 +65277,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Tamara_Hope"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Peter_Chelsom"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A romantic comedy where a bored, overworked Estate Lawyer, upon first sight of a beautiful instructor, signs up for ballroom dancing lessons.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shall_We_Dance?</prop:hasTitle>
     </owl:NamedIndividual>
@@ -65698,8 +65338,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Eastern European tourist unexpectedly finds himself stranded in JFK airport, and must take up temporary residence there.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Terminal</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -65820,7 +65458,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/UnitedArabEmirates"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A politically charged epic about the state of the oil industry in the hands of those personally involved in and affected by it.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Syriana</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -65851,7 +65488,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A series of events tests the beliefs of a small isolated countryside village.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Village</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
     </owl:NamedIndividual>
     
 
@@ -65944,8 +65580,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When Jason Bourne is framed for a CIA operation gone awry, he is forced to resume his former life as a trained assassin to survive.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Bourne_Supremacy</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -65974,7 +65608,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Christopher_Nolan"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">After training with his mentor, Batman begins his fight to free crime-ridden Gotham City from corruption.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman_Begins</prop:hasTitle>
     </owl:NamedIndividual>
@@ -66008,7 +65641,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Germany"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Political intrigue and deception unfold inside the United Nations, where a U.S. Secret Service agent is assigned to investigate an interpreter who overhears an assassination plot.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Interpreter</prop:hasTitle>
     </owl:NamedIndividual>
@@ -66032,7 +65664,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relationships of two couples become complicated and deceitful when the man from one couple meets the woman of the other.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Closer</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -66183,8 +65814,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Japan"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A woman, Rose, goes in search for her adopted daughter within the confines of a strange, desolate town called Silent Hill.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silent_Hill</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -66244,8 +65873,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A career driven professional from Manhattan is wooed by a young painter, who also happens to be the son of her psychoanalyst.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prime</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -66302,8 +65929,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Shefali_Shah"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Vipul_Amrutlal_Shah"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/India"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ishwar Chandra Thakur is living the good life, content with his loving wife Sumitra and son Adiya. There is but one thing which gradually comes to annoy Ishwar: his son&apos;s laziness and ...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Waqt:_The_Race_Against_Time</prop:hasTitle>
     </owl:NamedIndividual>
@@ -66426,7 +66051,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Sh$u00F4suke_Tanihara"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Ry$u00FBhei_Kitamura"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Japan"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A detective hunts a killer who is removing girls hearts. When his own fiancée falls victim to the killer, the detective discovers the otherworldly intentions of the killer and is helped from beyond the grave by his fiancée.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sky_High</prop:hasTitle>
     </owl:NamedIndividual>
@@ -66489,8 +66113,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A man living in a futuristic sterile colony begins to question his circumscribed existence when his friend is chosen to go to the Island, the last uncontaminated place on earth.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Island</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -66698,7 +66320,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Sela_Ward"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Andrew_Davis"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A high school swim champion with a troubled past enrolls in the U.S. Coast Guard&apos;s &quot;A&quot; School, where legendary rescue swimmer Ben Randall teaches him some hard lessons about loss, love, and self-sacrifice.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Guardian</prop:hasTitle>
     </owl:NamedIndividual>
@@ -66823,8 +66444,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mourning over the tragic drowning of their daughter Sarah, James and Adèle are visited by Ebrill, a young girl who claims she died 60 years ago - and bears a startling resemblance to Sarah.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Dark</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -66888,11 +66507,8 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Luxembourg"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">At a turning point in his life, a former tennis pro falls for an actress who happens to be dating his friend and soon-to-be brother-in-law.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Match_Point</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -66922,11 +66538,8 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Bulgaria"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Canada"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">300</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -66958,7 +66571,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/France"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Mexico"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In turn-of-the-century Mexico, two very different women become a bank-robbing duo in an effort to combat a ruthless enforcer terrorizing their town.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bandidas</prop:hasTitle>
     </owl:NamedIndividual>
@@ -66992,7 +66604,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An F.B.I. Agent takes on a plane full of deadly venomous snakes, deliberately released to kill a witness being flown from Honolulu to Los Angeles to testify against a mob boss.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snakes_on_a_Plane</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -67023,8 +66634,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The life stories of the six men who raised the flag at the Battle of Iwo Jima, a turning point in World War II.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flags_of_Our_Fathers</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -67055,11 +66664,8 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Germany"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A psychological study of operations desert shield and desert storm during the gulf war; through the eyes of a U.S marine sniper who struggles to cope with the possibility his girlfriend may be cheating on him back home.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jarhead</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -67081,7 +66687,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Tinah_Mnumzana"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Darrell_Roodt"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/SouthAfrica"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">After falling ill, Yesterday learns that she is HIV positive. With her husband in denial and young daughter to tend to, Yesterday&apos;s one goal is to live long enough to see her child go to school.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yesterday</prop:hasTitle>
     </owl:NamedIndividual>
@@ -67202,7 +66807,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Edgar_Wright"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/France"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A skilled London police officer is transferred to a small town with a dark secret.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hot_Fuzz</prop:hasTitle>
     </owl:NamedIndividual>
@@ -67289,7 +66893,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A detective examines the mysterious death of</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hollywoodland</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -67318,11 +66921,8 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Isaach_De_Bankol$u00E9"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Michael_Kenneth_Mann"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Based on the 1980s TV action/drama, this update focuses on vice detectives Crockett and Tubbs as their respective personal and professional lives become dangerously intertwined.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miami_Vice</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -67354,7 +66954,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Spain"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Novelist Catherine Tramell is once again in trouble with the law, and Scotland Yard appoints psychiatrist Dr. Michael Glass to evaluate her. Though, like Detective Nick Curran before him, Glass is entranced by Tramell and lured into a seductive game.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basic_Instinct_2</prop:hasTitle>
     </owl:NamedIndividual>
@@ -67387,11 +66986,8 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Germany"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UnitedArabEmirates"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A team of U.S. government agents are sent to investigate the bombing of an American facility in the Middle East.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Kingdom</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -67451,7 +67047,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Troy_Ruptash"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Nicole_Holofcener"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">After she quits her lucrative job, Olivia finds herself unsure about her future and her relationships with her successful and wealthy friends.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Friends_with_Money</prop:hasTitle>
     </owl:NamedIndividual>
@@ -67485,11 +67080,8 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/SouthAfrica"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A drama about terrorism in Apartheid-era South Africa, revolving around a policeman and a young man who carries out solo attacks against the regime.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catch_a_Fire</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -67551,11 +67143,8 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Italy"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In 2018, a mysterious new weapon in the war against the machines, half-human and half-machine, comes to John Connor on the eve of a resistance attack on Skynet. But whose side is he on, and can he be trusted?</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terminator_Salvation</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -67587,8 +67176,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Based on the true story, two homicide detectives track Martha Beck and Raymond Martinez Fernandez, a murderous pair known as the &quot;Lonely Hearts Killers&quot; who lured their victims through the personals.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lonely_Hearts</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -67619,7 +67206,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A trio of black female soul singers cross over to the pop charts in the early 1960s, facing their own personal struggles along the way.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dreamgirls</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -67648,7 +67234,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Yanna_McIntosh"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Clark_Johnson"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Secret Service agent is framed as the mole in an assassination attempt on the President. He must clear his name and foil another assassination attempt while on the run from a Secret Service Protective Intelligence Division agent.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Sentinel</prop:hasTitle>
     </owl:NamedIndividual>
@@ -67681,7 +67266,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the late 1960s/early 1970s, a San Francisco cartoonist becomes an amateur detective obsessed with tracking down the Zodiac Killer, an unidentified individual who terrorizes Northern California with a killing spree.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zodiac</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -67773,7 +67357,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Bruce_Beresford"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Germany"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A father and his son attempt to bring in an assassin to the authorities, but his dangerous associates have other plans.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Contract</prop:hasTitle>
     </owl:NamedIndividual>
@@ -67804,7 +67387,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Marc_Evans"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Canada"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A drama focused on the friendship between a high-functioning autistic woman and a man who is traumatized after a fatal car accident.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snow_Cake</prop:hasTitle>
     </owl:NamedIndividual>
@@ -67835,8 +67417,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A team of international astronauts are sent on a dangerous mission to reignite the dying Sun with a nuclear fission bomb in 2057.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sunshine</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -67869,7 +67449,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Netherlands"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Sweden"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Lebanese boy gets separated from his family during the civil war and ends up in Sweden.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zozo</prop:hasTitle>
     </owl:NamedIndividual>
@@ -67904,7 +67483,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biopic of the iconic French singer</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La_Vie_En_Rose</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -67964,8 +67542,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A man who specialises in debunking paranormal occurrences checks into the fabled room 1408 in the Dolphin Hotel. Soon after settling in, he confronts genuine terror.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1408</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -67994,7 +67570,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Trudi_Goodman"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Ben_Affleck"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two Boston area detectives investigate a little girl&apos;s kidnapping, which ultimately turns into a crisis both professionally and personally.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gone_Baby_Gone</prop:hasTitle>
     </owl:NamedIndividual>
@@ -68027,8 +67602,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Finland"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FC Venus is a romantic comedy about men, women and soccer.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FC_Venus</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -68092,7 +67665,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When the world is threatened by an ancient evil, the four adolescent turtles must reunite and overcome their faults in order to stand against it.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMNT</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -68152,7 +67724,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Germany"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An epileptic girl suffers a breakdown during her first year at university, then decides to seek help from a priest in battling the troubles associated with her strict upbringing.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Requiem</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -68301,7 +67872,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Martin_Lord_Cayce"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Bong_Joon_Ho"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/SouthKorea"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A monster emerges from Seoul&apos;s Han River and begins attacking people. One victim&apos;s loving family does what it can to rescue her from its clutches.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Host</prop:hasTitle>
     </owl:NamedIndividual>
@@ -68360,11 +67930,8 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Trevor_Morgan"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/George_Gallo"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A successful artist looks back with loving memories on the summer of his defining year, 1974. A talented but troubled 18-year-old aspiring artist befriends a brilliant elderly alcoholic ...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local_Color</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -68453,7 +68020,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thirty years after the ring of the first bell, Rocky Balboa comes out of retirement and dons his gloves for his final fight against the reigning heavyweight champ Mason &apos;The Line&apos; Dixon.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rocky_Balboa</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -68485,8 +68051,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Professional assassin Chev Chelios learns his rival has injected him with a poison that will kill him if his heart rate drops.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crank</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -68550,8 +68114,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the ironically named city of Paradise, a loser teams up with his cult-leading uncle to steal a peculiar bounty of riches from their local amusement park. The recently arrived Taliban have a similar focus, but a far more sinister intent.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Postal</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -68610,7 +68172,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Timothy_Patrick_Quill"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Bruce_Lorne_Campbell"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mistaken for his character Ash from the &apos;Evil Dead&apos; trilogy,</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">My_Name_Is_Bruce</prop:hasTitle>
     </owl:NamedIndividual>
@@ -68668,7 +68229,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Saffron_Burrows"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Mike_Binder"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A man who lost his family in the September 11 attack on New York City runs into his old college roommate. Rekindling the friendship is the one thing that appears able to help the man recover from his grief.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reign_Over_Me</prop:hasTitle>
     </owl:NamedIndividual>
@@ -68730,7 +68290,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Tobey_Maguire"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Jim_Sheridan"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A young man comforts his older brother&apos;s wife and children after he goes missing in Afghanistan.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brothers</prop:hasTitle>
     </owl:NamedIndividual>
@@ -68789,12 +68348,8 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Hinnerk_Sch$u00F6nemann"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Christian_Petzold"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Germany"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yella is estranged from her possessive and violent husband; but he can&apos;t quite bring himself to give her up. When their fraught interaction finally comes to dramatic conclusion, Yella&apos;s life takes an odd shift.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yella</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -68944,7 +68499,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Terry_George"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Germany"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The lives of two families change forever after a fatal tragedy takes place on Reservation Road.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reservation_Road</prop:hasTitle>
     </owl:NamedIndividual>
@@ -69065,7 +68619,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Germany"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Based on</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vollidiot</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -69147,8 +68700,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Susannah_York"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Gerald_McMorrow"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portrait of the broken lives of four people (a vigilante detective, a worried parent, an awkward man looking for love and a suicidal artist) as they all struggle to cope in their religiously-dystopian city.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Franklyn</prop:hasTitle>
     </owl:NamedIndividual>
@@ -69362,7 +68913,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Willie_Garson"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Michael_Patrick_King"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A New York City writer on sex and love is finally getting married to her Mr. Big. But her three best girlfriends must console her after one of them inadvertently leads Mr. Big to jilt her.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sex_and_the_City</prop:hasTitle>
     </owl:NamedIndividual>
@@ -69394,8 +68944,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Top astrophysicist Sasha Greenberg has spent the past 17 years working in the United States. An invitation to speak at a Congress on Cosmology in his native Moscow brings him home for the ...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perestroika</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -69485,7 +69033,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A young American writer completes his service in WWI and travels across Europe with his wife and her attractive Italian girlfriend. Based on the novel by Ernest Hemingway.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Garden_of_Eden</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -69515,7 +69062,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Belgium"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/France"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Liberia"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cast of unknown performers are used in this drama about child soldiers fighting a war in an African country.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johnny_Mad_Dog</prop:hasTitle>
     </owl:NamedIndividual>
@@ -69595,7 +69141,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Tess_Panzer"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Adam_Mason"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A psychological thriller, which explores the destruction of a young couple&apos;s seemingly perfect marriage.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood_River</prop:hasTitle>
     </owl:NamedIndividual>
@@ -69689,7 +69234,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/Iran"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In an act of vengeance, a young man randomly kills two police officers. He escapes to the forest, where he is arrested by two other officers. The three men are surrounded by trees, the ...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Hunter</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -69806,8 +69350,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Sean_Harris"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Daniel_Barber"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Crime_and_Punishment"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An elderly ex-serviceman and widower looks to avenge his best friend&apos;s murder by doling out his own form of justice.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harry_Brown</prop:hasTitle>
     </owl:NamedIndividual>
@@ -69869,7 +69411,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Kik$u00E9_Ma$u00EDllo"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/France"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Spain"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A shy genius is employed by his former university to design robot software.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eva</prop:hasTitle>
     </owl:NamedIndividual>
@@ -69963,7 +69504,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Three college students set out to document what other people dread the most. However, one of the three turns out to secretly be a sadistic psychopath who uses this knowledge to gruesomely torture the subjects.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dread</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -70019,7 +69559,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Reha_Erdem"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Bulgaria"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Turkey"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Vintage"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A strange man with otherworldly talents becomes both a friend and a pariah in a small Turkish town in this drama from writer and director Reha Erdem. Yahya is nearly in a panic when his ...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kosmos</prop:hasTitle>
     </owl:NamedIndividual>
@@ -70097,7 +69636,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Turakhan_Sadykova"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Ermek_Tursunov"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Kazakhstan"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A woman is led by her family to her new husband&apos;s home, to live with, presumably, his elderly mother and younger brother. Despite being forced into the marriage, she discovers that he is ...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kelin</prop:hasTitle>
     </owl:NamedIndividual>
@@ -70129,7 +69667,6 @@
         <prop:hasDirector rdf:resource="http://example.org/ns/Lauri_Harjola"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Georgia"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/War_and_Peace"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A drama set centered around the war between Russia and Georgia, and focused on an American journalist, his cameraman, and a Georgian native who become caught in the crossfire.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5_Days_of_War</prop:hasTitle>
     </owl:NamedIndividual>
@@ -70334,8 +69871,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/India"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quirky rom-com where Kush finds the ideal Indian bride Dimple for his brother Luv and a series of comical and unpredictable events follow.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mere_Brother_Ki_Dulhan</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -70395,8 +69930,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/UK"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paris, 1830: Octave, betrayed by his mistress, sinks into despair and debauchery. His father&apos;s death leads him to the country where he meets Brigitte, a widow who is ten years his elder. ...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confession_of_a_Child_of_the_Century</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -70538,8 +70071,6 @@
         <prop:hasLocation rdf:resource="http://example.org/ns/USA"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Director Patrik-Ian Polk provides exciting character developments, brilliant cinematography and life lessons for all, particularly for members of the black LGBT community. Cameos by key actors from the Noah Arc series are visual delights.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_Skinny</prop:hasTitle>
-        <prop:hasComments rdf:resource="http://example.org/ns/Bad"/>
-        <prop:hasComments rdf:resource="http://example.org/ns/Good"/>
     </owl:NamedIndividual>
     
 
@@ -70596,7 +70127,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/Valerie_Spelman"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/Conor_McMahon"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Ireland"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Noir"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clown comes back from the dead to haunt those who took his life during a fatal party mishap.</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stitches</prop:hasTitle>
     </owl:NamedIndividual>
@@ -70625,7 +70155,6 @@
         <prop:hasActor rdf:resource="http://example.org/ns/M$u00E5rten_Klingberg"/>
         <prop:hasDirector rdf:resource="http://example.org/ns/M$u00E5rten_Klingberg"/>
         <prop:hasLocation rdf:resource="http://example.org/ns/Sweden"/>
-        <prop:hasThematicCategory rdf:resource="http://example.org/ns/Romance"/>
         <prop:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">After getting fired from his current job as a pilot and dumped by his current wife, he seeks to find a new job. Out of desperation on the job market he disguises himself as a woman in order...</prop:hasDescription>
         <prop:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cockpit</prop:hasTitle>
     </owl:NamedIndividual>
@@ -73721,338 +73250,6 @@
     <owl:NamedIndividual rdf:about="http://example.org/ns/Zita_G$u00F6r$u00F6g">
         <rdf:type rdf:resource="http://example.org/ns/Actor"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://example.org/ns/1">
-        <prop:Likes rdf:resource="http://example.org/ns/tt0399201"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0159797"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0351283"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0112817"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt1001540"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0100201"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0160399"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0472126"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt2107835"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0117705"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0200954"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0219822"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0486640"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0160399"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0453365"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0472126"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0109000"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt1001540"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0431197"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0441774"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0120755"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0362227"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0890888"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0431197"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0399201"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0351283"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0183523"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0109000"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0266308"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0120912"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0087363"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0302674"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0086355"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0086250"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0069293"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0418763"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0453365"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0441774"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0806686"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120753"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0141926"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0117060"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0117705"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0362227"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0038367"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0411267"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0120753"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0416320"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt1190072"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0479884"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt2107835"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0177789"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120907"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0219822"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0302674"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0275230"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0159797"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0416320"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0086250"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0110638"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0120907"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0086355"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/ns/10">
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt1740710"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0086250"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0086250"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt1740710"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt1865335"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt1865335"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/ns/2">
-        <prop:Likes rdf:resource="http://example.org/ns/tt0129774"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0411267"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0138097"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0472126"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0078748"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0348593"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0416320"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0275230"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0274309"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0259324"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0448134"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0089885"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0138097"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0086250"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0416320"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0274309"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0053182"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0348593"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0110638"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0112817"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0351283"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0110638"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0117060"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0053182"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120912"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0289879"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0384537"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0472126"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0411267"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120753"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0117705"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0078748"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0275230"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0177789"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0259324"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0117705"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0069293"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/ns/3">
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0086250"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0438488"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0443706"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0438488"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0271027"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0069293"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120912"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0117060"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0453556"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0479884"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0411267"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0376541"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0327554"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0806686"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0100507"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0486640"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0069704"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0441774"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0362227"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0416449"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0069293"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0387514"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0479884"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0082661"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0281364"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0441774"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0384537"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0472126"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0479143"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0362227"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0274309"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0416449"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0387514"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0069704"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0486640"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0384537"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0890888"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0086250"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0443489"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0448134"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120663"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0274309"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0274558"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0100649"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0053182"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0271027"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/ns/4">
-        <prop:Likes rdf:resource="http://example.org/ns/tt0086250"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120753"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120912"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/ns/5">
-        <prop:Likes rdf:resource="http://example.org/ns/tt0351283"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0120338"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120753"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0411267"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0172156"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0069293"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120338"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0069293"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt1031243"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/ns/6">
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0069293"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0113101"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0080678"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0450188"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0115632"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0372183"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120912"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0441774"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0094625"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0430357"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt1865335"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0069293"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0031725"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0372183"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0430357"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0086250"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0031725"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0115632"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt1331307"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0015758"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0080678"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/ns/7">
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0089927"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0047034"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0072684"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0075314"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0365737"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120912"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0137523"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0072684"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0069293"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0416449"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0089927"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0119396"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0302674"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0119932"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0329767"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0416320"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0119396"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0441774"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0177789"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0387514"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0416449"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0094625"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0118880"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0287624"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0302674"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0418763"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0416320"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120789"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0094625"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0047034"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0450385"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0067017"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0222851"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0120789"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0100201"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0067017"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0200954"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0112817"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0100201"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0450385"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0125439"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0418689"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0125439"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0056801"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0351283"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0118880"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0200954"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0034570"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0329767"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0119932"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0056801"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0418763"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0376541"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0069293"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0034570"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0070157"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0085811"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0441774"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0291400"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120755"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0101420"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0418689"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0070157"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0417148"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0443489"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0454931"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0137523"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0085811"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/ns/8">
-        <prop:Likes rdf:resource="http://example.org/ns/tt0274558"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0068883"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0045296"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0120753"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0274558"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0062765"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0479884"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120338"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0045296"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120753"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0258463"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0313670"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/ns/9">
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0346491"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0183523"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0418689"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0110361"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0112817"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0177789"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0259324"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0441774"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0117705"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0112817"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0302674"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0183523"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0069293"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0418763"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0441774"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0275230"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0117705"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0431197"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0177789"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0275230"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0069293"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0302674"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0418763"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0289879"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0427969"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120789"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0120755"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0437232"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0806686"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0368447"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0448134"/>
-        <prop:Likes rdf:resource="http://example.org/ns/tt0110361"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0120753"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0120789"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0351283"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0448134"/>
-        <prop:Dislikes rdf:resource="http://example.org/ns/tt0120755"/>
-    </rdf:Description>
 </rdf:RDF>
 
 
